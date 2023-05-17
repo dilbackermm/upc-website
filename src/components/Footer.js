@@ -65,7 +65,7 @@ const Footer = () => {
      <FooterLink href="/" title="Silo Bags" />
     </li>
     <li className='py-2'>
-     <FooterLink href="/" title="Flexitanks" />
+     <FooterLink href="/flexitank" title="Flexitanks" />
     </li>
   </ul>
 </div>
