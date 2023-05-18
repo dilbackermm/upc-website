@@ -9,7 +9,8 @@ import Product from '@/components/Product'
 import Welcome from '@/components/Welcome'
 import Industries from '@/components/Industries'
 import { motion } from 'framer-motion'
-
+import AboutUs from '@/components/AboutUs'
+import ContactUs from '@/components/ContactUs'
 
 
 
@@ -76,6 +77,8 @@ export default function Home() {
       <Product className="z-30"    />
       <Welcome className="z-30" />
       <Industries />
+      <AboutUs />
+      <ContactUs />
     </>
   )
 }

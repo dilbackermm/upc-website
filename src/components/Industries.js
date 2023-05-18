@@ -47,7 +47,7 @@ const Industries = () => {
     <main className="-mt-10 -pt-30 z-100 flex items-center text-light w-full min-h-screen 
        bg-primarylight  " >
       <Layout className='mx-24 py-6 xl:mr-3 lg:mr-2 md:mx-4 sm:mx-1 pt-4 bg-transparent text-light '>
-        <div className="flex py-6  lg:flex-col-reverse items-center pb-12">
+        <div className="flex py-6  lg:flex-col-reverse items-center pb-3">
           <div className='w-3/5 lg:w-full py-6'>
             <ul>
             <Industry
