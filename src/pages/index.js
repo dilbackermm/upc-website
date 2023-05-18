@@ -9,11 +9,14 @@ import Product from '@/components/Product'
 import Welcome from '@/components/Welcome'
 import Industries from '@/components/Industries'
 import { motion } from 'framer-motion'
+<<<<<<< HEAD
 import AboutUs from '@/components/AboutUs'
 import ContactUs from '@/components/ContactUs'
 
 
 
+=======
+>>>>>>> f12d8afa9094e808d6f133e438a1e6b334b74b2c
 
 export default function Home() {
   return (
