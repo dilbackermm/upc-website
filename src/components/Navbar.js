@@ -120,9 +120,9 @@ const Navbar = () => {
         bg-primaryDark/90 rounded-2xl backdrop-blur py-32 ' >
                         <nav className='flex items-center flex-col justif-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/#aboutus" title="About" className='' toggle={handleClick} />
                             <CustomMobileLink href="#products" title="Products" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/articles" title="Contact" className='' toggle={handleClick} />
+                            <CustomMobileLink href="#contactus" title="Contact" className='' toggle={handleClick} />
                         </nav>
 
 

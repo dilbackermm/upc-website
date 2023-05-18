@@ -37,13 +37,13 @@ const Footer = () => {
      <h6 className=' text-secondaryLight font-medium  '>Company</h6>
     </li>
     <li className='py-2'>
-     <FooterLink href="/about" title="About" />
+     <FooterLink href="#aboutus" title="About" />
     </li>
     <li className='py-2'>
      <FooterLink href="#products" title="Products" />
     </li>
     <li className='py-2'>
-     <FooterLink href="/" title="Contact" />
+     <FooterLink href="#contactus" title="Contact" />
     </li>
     <li className='py-2'>
      <FooterLink href="/" title="Shop" />
