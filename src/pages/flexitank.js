@@ -2,7 +2,7 @@ import React from 'react'
 
 const flexitank = () => {
   return (
-    <div>flexitank</div>
+    <div>flexitanks</div>
   )
 }
 
