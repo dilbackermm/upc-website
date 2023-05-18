@@ -10,10 +10,6 @@ import Welcome from '@/components/Welcome'
 import Industries from '@/components/Industries'
 import { motion } from 'framer-motion'
 
-
-
-
-
 export default function Home() {
   return (
     <>
