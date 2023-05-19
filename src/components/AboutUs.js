@@ -16,7 +16,7 @@ const AboutUs = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='aboutus' >
             <Layout className=' bg-transparent z-20 mx-32 xl:mx-12 lg:mx-6'>
                 <AnimatedText text="About Us" className='mb-16 !text-8xl lg:!text-7xl sm:!text-6xl xs:!text-5xl sm:mb-8 ' />
-                <div className="grid grid-cols-2 lg:flex lg:flex-col gap-16 2xl:gap-9 xl:gap-6">
+                <div className="grid grid-cols-2 lg:flex lg:flex-col gap-16 2xl:gap-9 xl:gap-6 items-center">
                     <div className="flex flex-col items-center">
 
 
