@@ -43,7 +43,7 @@ const ContactUs = ({ className = "" }) => {
             <Form />
           </div>
         </div>
-        <div className="flex items-center lg:flex-col lg:items-start">
+        <div className="flex items-center lg:flex-col lg:items-start border-t border-t-dark/50 pt-6">
           <div className='flex flex-col '>
             <h2 className='pt-3 px-3 text-lg sm:text-base text-dark/75 font-medium'>Corporate Office</h2>
             <h2 className=' px-3 text-base sm:text-base text-dark font-medium'>#53, 1st floor, 4th Block 5th Cross, Kormangala , Bangalore 560034 India</h2>
