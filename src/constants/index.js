@@ -40,6 +40,29 @@ export const startingFeatures = [
   'No need to beat around the bush, just stay on the gas and have fun',
 ];
 
+
+export const uses = [
+  {
+  hedi: 'Fuel storage',
+  feature: 'Liquid fuels including gasoline, diesel, and oil can be stored and transported in flexitanks easily. they are primarily utilized for storage. Coupled with a protective lining and berm, to provide extra containment safety to the surrounding environment.',
+  },
+  {
+    hedi: 'Portable water storage',
+    feature: 'Flexitanks occupy very little space and are easy to transport. In case of emergencies or during disaster reliefs, they are also used to store and transport potable water',  },
+    {
+      hedi: 'Food-grade liquid storage',
+      feature: 'Flexitanks enable the safe storage of food-grade liquid ingredients, such as milk, juices, wines, fructose syrup and others.',
+      },
+      {
+        hedi: 'Industrial chemical storage',
+        feature: 'Flexitanks are ideal for transporting and storing industrial liquid chemicals such as liquid detergents, lubricants, fertilizers, liquid latex, and paints, among others.',
+        },
+        {
+          hedi: 'Single-use & primary storage',
+          feature: 'Flexitanks can decrease the overall storage costes in cases where liquid storage is not for a long duration.',
+          },
+];
+
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',
