@@ -62,8 +62,8 @@ const DunnageService = ({ className = "" }) => {
 
                 </div>
                 <div className='py-12 text-primaryDark text-center'>
-                    <h2 className='text-7xl font-light'>"Become part of our team</h2>
-                    <h2 className='pt-3 text-7xl font-light'>Inviting distributors"</h2>
+                    <h2 className='text-7xl lg:text-4xl font-light'>"Become part of our team</h2>
+                    <h2 className='pt-3 text-7xl lg:text-4xl font-light'>Inviting distributors"</h2>
                 </div>
             </Layout>
         </main>
