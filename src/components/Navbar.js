@@ -49,7 +49,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
 
 
-const Navbar = () => {
+const Navbar = ( {className = "" }) => {
 
    
     const [isOpen, setIsOpen] = useState(false)
@@ -65,8 +65,8 @@ const Navbar = () => {
 
     return (
         <header
-            className=' bg-[#cd8c20]/25 w-full px-32 py-8 font-medium flex items-center justify-between
-            dark:text-light ralative z-10 lg:px-16 md:px-12 sm:px-8 '
+            className={`w-full px-32 py-8 font-medium flex items-center justify-between
+            dark:text-light ralative z-10 lg:px-16 md:px-12 sm:px-8 ${className}`} 
         >
      <div className=' '>
                 <Logo />

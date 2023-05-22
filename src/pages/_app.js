@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className={`${montserrat.variable} font-mont w-full min-h-screen bg-transparent  `}>
-     <Navbar  />
+     
   
   <Component key={router.asPath} {...pageProps} />
   
