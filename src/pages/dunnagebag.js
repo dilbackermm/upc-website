@@ -9,6 +9,8 @@ import AnimatedText from '@/components/AnimatedText'
 import { motion } from 'framer-motion'
 import DunnageContent from '@/components/DunnageContent'
 import DunnageBenefits from '@/components/DunnageBenefits'
+import DunnageSize from '@/components/DunnageSize'
+import DunnageService from '@/components/DunnageService'
 
 
 {/* bg-gradient-to-r from-[#F3E8D6] to-[#DBC4AC] */ }
@@ -55,6 +57,9 @@ const dunnagebag = () => {
       </main>
 <DunnageContent />
 <DunnageBenefits />
+<DunnageSize />
+<DunnageService />
+
     </>
   )
 }
