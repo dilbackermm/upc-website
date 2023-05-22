@@ -16,7 +16,7 @@ const Benefits = ({ benefit }) => {
             transition={{ type: 'tween', }}
             className="flex items-center w-full border-b border-b-primaryDark "
         >
-            <h2 className='py-5 pl-3 text-2xl sm:text-xl text-primaryDark font-medium '>{benefit}</h2>
+            <h2 className='py-5 xl:py-3 pl-3 text-2xl 2xl:text-xl lg:text-lg xs:text-base text-primaryDark font-medium '>{benefit}</h2>
         </motion.li>
     )
 }
@@ -29,7 +29,7 @@ const DunnageBenefits = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='pt-0 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Benefits of UPC Dunnage Bags " className='!pt-6 pb-14' />
-                <Image src={dunnage} className='absolute w-[600px]  right-60 z-20 -translate-y-16' />
+                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[520px] xl:w-[460px] right-60 xl:right-32  z-20 -translate-y-16 lg:relative lg:items-center' />
                 <div className='py-12'>
                    
                     <ul className='mt-12 tex-left border-t border-y-primaryDark'>

@@ -11,9 +11,9 @@ const DunnageContent = ({ className = "" }) => {
             <Layout className='!pt-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex items-center lg:flex-col z-0">
                     <div className="w-4/12 lg:flex-col">
-                        <Image src={dunnagePic2} alt='dunnage bag z-10' />
+                        <Image src={dunnagePic2} alt='dunnage bag z-10 mr-12' />
                     </div>
-                    <div className="w-8/12 lg:flex-col">
+                    <div className="w-8/12 lg:flex-col 2xl:ml-12 xl:ml-20">
                         <motion.p
                             initial={{ y: 200 }}
                             whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}

@@ -37,7 +37,7 @@ const dunnagebag = () => {
          <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
           <div className='flex flex-col lg:items-center  text-light'>
-            <div className='w-3/5 lg:w-full'>
+            <div className='w-3/5 xl:w-4/5 lg:w-full'>
               <div className="my-32 lg:hidden"></div>
             <AnimatedText text="crown Dunnage Bags "
           className='   pt-0 text-secondaryLight !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
@@ -48,7 +48,7 @@ const dunnagebag = () => {
             </div>
           
           </div>
-          <div className="w-2/5"></div>
+          <div className="w-2/5 xl:w-1/5"></div>
           
         </Layout>
 
