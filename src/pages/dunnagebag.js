@@ -55,11 +55,10 @@ const dunnagebag = () => {
         </Layout>
 
       </main>
-<DunnageContent  />
-<DunnageSize  />
-<DunnageService  />
-
-
+<DunnageContent />
+<DunnageBenefits />
+<DunnageSize />
+<DunnageService />
     </>
   )
 }
