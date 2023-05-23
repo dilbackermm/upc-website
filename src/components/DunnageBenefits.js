@@ -90,7 +90,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             <p className='text-lg lg:text-base xs:text-sm py-2'>
                                 Products being shipped can slide around, drop, get squished, or be
                                 subject to collision, which can lead to shock and vibration. Dunnage
-                                is always put in place to act as a shock absorber to prevent damage.
+                                is always put in place to act as a shock absorber to prevent damage.<br/><br/><br/>
                             </p>
                         </div>
                     </div>

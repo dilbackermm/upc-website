@@ -55,17 +55,10 @@ const dunnagebag = () => {
         </Layout>
 
       </main>
-<<<<<<< HEAD
 <DunnageContent />
 <DunnageBenefits />
 <DunnageSize />
 <DunnageService />
-=======
-<DunnageContent  />
-<DunnageSize  />
-<DunnageService  />
-
->>>>>>> 5eea9efea6e6c5cc1a0df66d3e831ad64971c0ae
     </>
   )
 }
