@@ -62,7 +62,8 @@ const DunnageContent = ({ className = "" }) => {
                                     <p className='text-lg py-3  pt-6 leading-8  xs:text-base '>Dunnage Air Bags are best used to control the movement of cargo
                                         loads in railcars, trucks, or overseas containers. They manage
                                         the movement of cargo by bracing loads, filling voids, protecting
-                                        cargo from in-transit damage, and absorbing vibrations.</p></motion.div>
+                                        cargo from in-transit damage, and absorbing vibrations.</p>
+                                </motion.div>
                             </div>
                         </div>
                     </div>

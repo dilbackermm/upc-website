@@ -10,10 +10,10 @@ const StartSteps = ({ hedi, feature, index}) => (
     </p>
     </div>
     <div className="flex flex-col ">
-    <p className="ml-[30px] font-semibold text-4xl text-[#904C06] leading-[32px]">
+    <p className="ml-6 text-3xl font-bold text-primaryDark">
       {hedi}
     </p>
-    <p className="ml-[30px] mt-5 font-normal text-[18px] text-[#4B2204] leading-[32px]">
+    <p className="ml-6 text-lg py-3 pt-6 leading-8 xs:text-base">
       {feature}
     </p>
     </div>
