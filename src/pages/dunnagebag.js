@@ -59,7 +59,6 @@ const dunnagebag = () => {
 <DunnageBenefits />
 <DunnageSize />
 <DunnageService />
-
     </>
   )
 }
