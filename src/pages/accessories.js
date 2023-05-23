@@ -20,6 +20,9 @@ import Accessory10 from '../../public/images/accessories/Accessories-10.png'
 import Accessory11 from '../../public/images/accessories/Accessories-11.png'
 import Accessory12 from '../../public/images/accessories/Accessories-12.png'
 import Accessory13 from '../../public/images/accessories/Accessories-13.png'
+import Accessory14 from '../../public/images/accessories/Accessories-14.jpg'
+import Accessory15 from '../../public/images/accessories/Accessories-15.jpg'
+import Accessory16 from '../../public/images/accessories/Accessories-16.jpg'
 
 
 
@@ -69,6 +72,9 @@ export default function Home() {
                       <Items img={Accessory11} />
                       <Items img={Accessory12} />
                       <Items img={Accessory13} />
+                      <Items img={Accessory14} />
+                      <Items img={Accessory15} />
+                      <Items img={Accessory16} />
                       
                     </div>
                     
