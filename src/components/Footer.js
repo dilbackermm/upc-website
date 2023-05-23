@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
        
 <div className="flex flex-row  sm:flex-col basis-3/10 gap-24 sm:gap-6">
-<div className='flex items-center  '>
+<div className='flex items-start  '>
   <ul>
     <li className='py-3'>
      <h6 className=' text-secondaryLight font-medium  '>Company</h6>
@@ -40,17 +40,17 @@ const Footer = () => {
      <FooterLink href="/" title="Home" />
     </li>
     <li className='py-2'>
-     <FooterLink href="#aboutus" title="About" />
+     <FooterLink href="/#aboutus" title="About" />
     </li>
     <li className='py-2'>
-     <FooterLink href="#products" title="Products" />
+     <FooterLink href="/#products" title="Products" />
     </li>
     <li className='py-2'>
-     <FooterLink href="#contactus" title="Contact" />
+     <FooterLink href="/#contactus" title="Contact" />
     </li>
   </ul>
 </div>
-<div className='flex items-center '>
+<div className='flex items-start '>
   <ul>
     <li className='py-3'>
      <h6 className=' text-secondaryLight font-medium '>Products</h6>
