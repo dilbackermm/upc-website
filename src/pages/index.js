@@ -34,7 +34,7 @@ export default function Home() {
               (max-width: 1200px) 50vw,       
               33vw"
               />
-      <main className="  flex items-center text-dark dark:text-light w-full min-h-screen 
+      <main className="  flex items-center text-dark w-full min-h-screen 
       bg-[#cd8c20]/25  pb-0 mb-0 lg:items-start ">
         <Layout className=' pt-0 pb-0  bg-transparent '>
 
@@ -52,7 +52,7 @@ export default function Home() {
                 <Link href="/dummy.pdf" target={"_blank"}
                   className="flex items-center bg-primaryDark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                   hover:bg-light hover:text-primaryDark border-2 border-solid border-transparent hover:border-primaryDark
-                  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                 
                   md:p-2 md:px-4 md:text-base"
                   download={true}
                 >More

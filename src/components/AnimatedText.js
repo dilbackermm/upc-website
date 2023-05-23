@@ -38,7 +38,7 @@ const AnimatedText = ({ text, className = "" }) => {
     overflow-hidden'
 
         >
-            <motion.h1 className={`inline-block w-full text-dark dark:text-light font-bold capitalize text-7xl  2xl:text-6xl xl:text-5xl lg:text-5xl sm:text-6xl xs:text-6xl ${className}`}
+            <motion.h1 className={`inline-block w-full text-dark  font-bold capitalize text-7xl  2xl:text-6xl xl:text-5xl lg:text-5xl sm:text-4xl xs:text-3xl ${className}`}
                 variants={quote}
                 initial="initial"
                 whileInView="animate"

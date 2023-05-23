@@ -8,10 +8,10 @@ const DunnageContent = ({ className = "" }) => {
     return (
         <main className={` flex pt-9 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='!pt-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
-                <div className="flex items-center lg:flex-col z-0">
+            <Layout className='!pt-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6'>
+                <div className="flex items-center lg:flex-col ">
                     <div className="w-4/12 lg:flex-col">
-                        <Image src={dunnagePic2} alt='dunnage bag z-10 mr-12' />
+                        <Image src={dunnagePic2} alt='dunnage bag mr-12' />
                     </div>
                     <div className="w-8/12 lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0">
                         <motion.p
