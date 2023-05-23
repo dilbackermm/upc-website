@@ -33,7 +33,7 @@ const flexitank = () => {
             (max-width: 1200px) 50vw,       
             33vw"/>
 
-      <main className="flex flex-col  text-dark dark:text-light w-full min-h-screen h-screen
+      <main className="flex flex-col  text-dark  w-full min-h-screen h-screen
    bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
         <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>

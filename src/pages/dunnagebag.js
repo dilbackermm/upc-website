@@ -34,7 +34,7 @@ const dunnagebag = () => {
             33vw"
       />
      
-      <main className="  flex flex-col  text-dark dark:text-light w-full min-h-screen 
+      <main className="  flex flex-col  text-dark w-full min-h-screen 
    bg-gradient-to-r bg-top from-[#4B2204] to-[#9c6618]/80  pb-0 mb-0 lg:items-start ">
          <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
@@ -55,10 +55,17 @@ const dunnagebag = () => {
         </Layout>
 
       </main>
+<<<<<<< HEAD
 <DunnageContent />
 <DunnageBenefits />
 <DunnageSize />
 <DunnageService />
+=======
+<DunnageContent  />
+<DunnageSize  />
+<DunnageService  />
+
+>>>>>>> 5eea9efea6e6c5cc1a0df66d3e831ad64971c0ae
     </>
   )
 }

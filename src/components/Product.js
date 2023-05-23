@@ -16,7 +16,7 @@ const Product = ({className = "" }) => {
   
   return (
 
-    <main className={` pt-0 flex items-center text-dark dark:text-light
+    <main className={` pt-0 flex items-center text-dark 
        bg-primarylight pb-0 mb-0 ${className} `} id='products' >
       <Layout className='pt-0 bg-transparent z-20 mx-0'>
       <AnimatedText

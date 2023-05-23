@@ -14,7 +14,7 @@ const CustomLink = ({ href, title, className = "" }) => {
         <Link href={href} className={`${className}  font relative group  ${router.asPath === href ? "font-semibold" : "font-normal"}  `}>
             {title}
 
-            <span className={`h-[2px] inline-block  bg-primaryDark absolute dark:bg-light left-0 -bottom-2
+            <span className={`h-[2px] inline-block  bg-primaryDark absolute left-0 -bottom-2
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? "w-full" : "w-0"}
             `}>&nbsp;</span>
@@ -36,13 +36,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     }
 
     return (
-        <button href={href} className={`${className} relative group text-light dark:text-primaryDark my-2`} onClick={handleClick}>
+        <button href={href} className={`${className} relative group text-light  my-2`} onClick={handleClick}>
             {title}
 
             <span className={`h-[1px] inline-block  bg-light  absolute left-0 -bottom-1
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? "w-full" : "w-0"}
-           dark:bg-primaryDark `}>&nbsp;</span>
+            `}>&nbsp;</span>
         </button >
     )
 }
@@ -66,7 +66,7 @@ const Navbar = ( {className = "" }) => {
     return (
         <header
             className={`w-full px-32 py-8 font-medium flex items-center justify-between
-            dark:text-light ralative z-10 lg:px-16 md:px-12 sm:px-8 ${className}`} 
+            ralative z-10 lg:px-16 md:px-12 sm:px-8 ${className}`} 
         >
      <div className=' '>
                 <Logo />

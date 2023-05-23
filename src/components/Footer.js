@@ -37,6 +37,9 @@ const Footer = () => {
      <h6 className=' text-secondaryLight font-medium  '>Company</h6>
     </li>
     <li className='py-2'>
+     <FooterLink href="/" title="Home" />
+    </li>
+    <li className='py-2'>
      <FooterLink href="#aboutus" title="About" />
     </li>
     <li className='py-2'>
@@ -44,9 +47,6 @@ const Footer = () => {
     </li>
     <li className='py-2'>
      <FooterLink href="#contactus" title="Contact" />
-    </li>
-    <li className='py-2'>
-     <FooterLink href="/" title="Shop" />
     </li>
   </ul>
 </div>
@@ -66,6 +66,9 @@ const Footer = () => {
     </li>
     <li className='py-2'>
      <FooterLink href="/flexitank" title="Flexitanks" />
+    </li>
+    <li className='py-2'>
+     <FooterLink href="/accessories" title="Accessories" />
     </li>
   </ul>
 </div>
