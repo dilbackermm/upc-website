@@ -11,7 +11,7 @@ import Layout from '@/components/Layout'
 
 import styles from '../styles/index'
 import { TitleText, TypingText } from '../components/CustomTexts';
-import  StartSteps from '../components/StartSteps';
+import StartSteps from '../components/StartSteps';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { uses } from '../constants';
 
@@ -33,467 +33,467 @@ const flexitank = () => {
             (max-width: 1200px) 50vw,       
             33vw"/>
 
-<main className="flex flex-col  text-dark dark:text-light w-full min-h-screen h-screen
+      <main className="flex flex-col  text-dark dark:text-light w-full min-h-screen h-screen
    bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
-         <Navbar className='bg-transparent' />
+        <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
           <div className='flex flex-row lg:items-center  text-light'>
             <div className='w-3/5 xl:w-4/5 lg:w-full'>
               <div className="my-32 lg:hidden"></div>
-            <AnimatedText text="Crown Flexitanks"
-          className='mt-20 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
-           </div>
-           <div className='flex flex-col ml-28 mt-20'>
-           <p className='my-6 mt-36 pr-0 sm:pr-0 text-dark font-medium text-xl xl:text-xl md:text-lg sm:text-base font-light'>
-           The flexitanks commonly used by the industry can hold up to 24,000 liters of liquid cargo.
-           Flexitanks are used for the transportation of non-hazardous liquids.
-           </p>
-           <p className='my-6 mt-0 pr-0 sm:pr-0 text-dark font-medium text-xl xl:text-xl md:text-lg sm:text-base font-light'>
-           To give a technical definition: "Hermetically sealed, collapsible, and flexible bag or
-           bladder, which is fitted into a twenty-foot Dry Van (DV) or standard conatainer." 
-           </p>
-          </div>
-          
+              <AnimatedText text="Crown Flexitanks"
+                className='mt-20 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
+            </div>
+            <div className='flex flex-col ml-28 mt-20'>
+              <p className='my-6 mt-36 pr-0 sm:pr-0 text-dark font-medium text-xl xl:text-xl md:text-lg sm:text-base font-light'>
+                The flexitanks commonly used by the industry can hold up to 24,000 liters of liquid cargo.
+                Flexitanks are used for the transportation of non-hazardous liquids.
+              </p>
+              <p className='my-6 mt-0 pr-0 sm:pr-0 text-dark font-medium text-xl xl:text-xl md:text-lg sm:text-base font-light'>
+                To give a technical definition: "Hermetically sealed, collapsible, and flexible bag or
+                bladder, which is fitted into a twenty-foot Dry Van (DV) or standard conatainer."
+              </p>
+            </div>
+
           </div>
           <div className="w-2/5 xl:w-1/5"></div>
-          
+
         </Layout>
 
       </main>
-    
-    <section className={`${styles.paddings} bg-primarylight relative z-10`}>
-    <motion.div
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{once: 'false', amount:0.25}}
-    className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
-    >
-    <motion.div
-    // variants={planetVariants('left')}
-    className={'flex-1 flex-col ${styles.flexCenter}'}
-    >
-    <TitleText textStyles={"text-center text-[80px] text-[#904C06]"} title={<>Uses for a Flexitank</>}/>
-    <img
-      src="../images/products/flexitank2.png"
-      alt="flexitank"
-      className="w-[90%] object-contain -mt-[50px]"
-    />
-    <p className='ml-20 mr-24 text-justify text-[#904C06]'>Due to its high efficiency and exceptional contamination prevention, flexitanks are
-    used for non-hazardous chemical transportation. But also for food-grade goods like
-    edible oil, fruit concentrates, drinks, among others.</p>
-    </motion.div>
-    <motion.div
-      variants={fadeIn('left', 'tween', 0.2, 1)}
-      className="flex-[1] flex justify-center flex-col">
-      {/* <TypingText title="| How Metaversus Works" /> */}
-      <div className="mt-[31px] flex flex-col max-w-[100%] mr-24 gap-[24px]">
-      { uses.map((feature, index) => (
-        <StartSteps
-        key={`feature-${index}`}
-        {...feature} index={index + 1}
-        />
-      )) }
-      </div>
-      </motion.div>
-    </motion.div>
 
-    <TitleText textStyles={"mt-20 ml-20 font-medium text-left text-[80px] text-[#904C06]"}
-    title={<>What can you carry</>}/>
-    <TitleText textStyles={"-mt-5 ml-20 font-medium text-left text-[80px] text-[#904C06]"}
-    title={<>in a Flexitank</>}/>
+      <section className={`${styles.paddings} bg-primarylight relative z-10`}>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: 'false', amount: 0.25 }}
+          className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
+        >
+          <motion.div
+            // variants={planetVariants('left')}
+            className={'flex-1 flex-col ${styles.flexCenter}'}
+          >
+            <TitleText textStyles={"text-center text-[80px] text-[#904C06]"} title={<>Uses for a Flexitank</>} />
+            <img
+              src="../images/products/flexitank2.png"
+              alt="flexitank"
+              className="w-[90%] object-contain -mt-[50px]"
+            />
+            <p className='ml-20 mr-24 text-justify text-[#904C06]'>Due to its high efficiency and exceptional contamination prevention, flexitanks are
+              used for non-hazardous chemical transportation. But also for food-grade goods like
+              edible oil, fruit concentrates, drinks, among others.</p>
+          </motion.div>
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="flex-[1] flex justify-center flex-col">
+            {/* <TypingText title="| How Metaversus Works" /> */}
+            <div className="mt-[31px] flex flex-col max-w-[100%] mr-24 gap-[24px]">
+              {uses.map((feature, index) => (
+                <StartSteps
+                  key={`feature-${index}`}
+                  {...feature} index={index + 1}
+                />
+              ))}
+            </div>
+          </motion.div>
+        </motion.div>
 
-    <div className="flex flex-row items-center justify-between max-w-[100%] ml-24 mr-24 gap-[50px]">
-    <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
+        <TitleText textStyles={"mt-20 ml-20 font-medium text-left text-[80px] text-[#904C06]"}
+          title={<>What can you carry</>} />
+        <TitleText textStyles={"-mt-5 ml-20 font-medium text-left text-[80px] text-[#904C06]"}
+          title={<>in a Flexitank</>} />
+
+        <div className="flex flex-row items-center justify-between max-w-[100%] ml-24 mr-24 gap-[50px]">
+          <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
     flex items-center bg-light shadow-lg border
     border-solid px-5 border-[#904C06] hover:shadow-xl rounded`}>
-    <p className="font-bold text-3xl text-primaryDark">
-    <img
-      src="../images/flexitanks/flexitank storage icons-01.png"
-      alt="flexitank"
-      className="w-[100%] object-contain p-10"
-    />
-    </p>
-    </div>
-    <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
+            <p className="font-bold text-3xl text-primaryDark">
+              <img
+                src="../images/flexitanks/flexitank storage icons-01.png"
+                alt="flexitank"
+                className="w-[100%] object-contain p-10"
+              />
+            </p>
+          </div>
+          <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
     flex items-center bg-light shadow-lg border
     border-solid px-5 border-[#904C06] hover:shadow-xl rounded`}>
-    <p className="font-bold text-3xl text-primaryDark">
-    <img
-      src="../images/flexitanks/flexitank storage icons-02.png"
-      alt="flexitank"
-      className="w-[100%] object-contain p-10"
-    />
-    </p>
-    </div>
-    <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
+            <p className="font-bold text-3xl text-primaryDark">
+              <img
+                src="../images/flexitanks/flexitank storage icons-02.png"
+                alt="flexitank"
+                className="w-[100%] object-contain p-10"
+              />
+            </p>
+          </div>
+          <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
     flex items-center bg-light shadow-lg border
     border-solid px-5 border-[#904C06] hover:shadow-xl rounded`}>
-    <p className="font-bold text-3xl text-primaryDark">
-    <img
-      src="../images/flexitanks/flexitank storage icons-03.png"
-      alt="flexitank"
-      className="w-[100%] object-contain p-10"
-    />
-    </p>
-    </div>
-    <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
+            <p className="font-bold text-3xl text-primaryDark">
+              <img
+                src="../images/flexitanks/flexitank storage icons-03.png"
+                alt="flexitank"
+                className="w-[100%] object-contain p-10"
+              />
+            </p>
+          </div>
+          <div className={`${styles.flexCenter} mt-20 w-[550px] h-auto
     flex flex-col items-center bg-light shadow-lg border
     border-solid px-5 border-[#904C06] hover:shadow-xl rounded`}>
-    <p className="font-bold text-3xl text-primaryDark">
-    <img
-      src="../images/flexitanks/flexitank storage icons-04.png"
-      alt="flexitank"
-      className="w-[100%] object-contain p-10"
-    />
-    </p>
-    </div>
-    </div>
+            <p className="font-bold text-3xl text-primaryDark">
+              <img
+                src="../images/flexitanks/flexitank storage icons-04.png"
+                alt="flexitank"
+                className="w-[100%] object-contain p-10"
+              />
+            </p>
+          </div>
+        </div>
 
-    <div className="flex flex-row items-center justify-between mt-7 max-w-[100%] ml-24 mr-24 gap-[50px]">
-    <div className={`${styles.flexCenter} w-[550px] h-auto`}>
-    <p className="text-2xl text-center text-primaryDark">
-    Food-grade liquid
-    </p>
-    </div>
+        <div className="flex flex-row items-center justify-between mt-7 max-w-[100%] ml-24 mr-24 gap-[50px]">
+          <div className={`${styles.flexCenter} w-[550px] h-auto`}>
+            <p className="text-2xl text-center text-primaryDark">
+              Food-grade liquid
+            </p>
+          </div>
 
-    <div className={`${styles.flexCenter} w-[550px] h-auto`}>
-    <p className="text-2xl text-center text-primaryDark">
-    Chemicals
-    </p>
-    </div>
+          <div className={`${styles.flexCenter} w-[550px] h-auto`}>
+            <p className="text-2xl text-center text-primaryDark">
+              Chemicals
+            </p>
+          </div>
 
-    <div className={`${styles.flexCenter} w-[550px] h-auto`}>
-    <p className="text-2xl text-center text-primaryDark">
-    Water
-    </p>
-    </div>
+          <div className={`${styles.flexCenter} w-[550px] h-auto`}>
+            <p className="text-2xl text-center text-primaryDark">
+              Water
+            </p>
+          </div>
 
-    <div className={`${styles.flexCenter} w-[550px] h-auto`}>
-    <p className="text-2xl text-center text-primaryDark">
-    Fuel
-    </p>
-    </div>
-</div>
+          <div className={`${styles.flexCenter} w-[550px] h-auto`}>
+            <p className="text-2xl text-center text-primaryDark">
+              Fuel
+            </p>
+          </div>
+        </div>
 
 
-<motion.div
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{once: 'false', amount:0.25}}
-    className={`${styles.innerwidth} mx-auto mt-20 flex lg:flex-row flex-row`}
-    >
-    <motion.div
-      variants={fadeIn('left', 'tween', 0.2, 1)}
-      className="flex-[1] flex items-center flex-col">
-          <img
-      src="../images/flexitanks/green bladder water tank.jpg"
-      alt="green bladder water tank"
-      className="w-[70%] object-contain mt-5"
-    />
-      </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: 'false', amount: 0.25 }}
+          className={`${styles.innerwidth} mx-auto mt-20 flex lg:flex-row flex-row`}
+        >
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="flex-[1] flex items-center flex-col">
+            <img
+              src="../images/flexitanks/green bladder water tank.jpg"
+              alt="green bladder water tank"
+              className="w-[70%] object-contain mt-5"
+            />
+          </motion.div>
 
-      <motion.div
-    // variants={planetVariants('left')}
-    className={'flex-1 flex-col ${styles.flexCenter}'}
-    >
-    <TitleText textStyles={"text-left text-[80px] text-[#904C06]"} title={<>Advantages</>}/>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>Flexitank containers have an
-    increasingly growing demand as they are economically viable for bulk traders for transporting
-    non-hazardous liquid cargo. They also offer better protection against liquid cargo contamination.</p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>Effectively, flexitanks have made transportation more efficient, cost-effective, and also have
-    a lesser environmental impact. They are becoming a preferred replacement for the traditionally
-    used drums and ISO containers.</p>
-    </motion.div>
-    </motion.div>
+          <motion.div
+            // variants={planetVariants('left')}
+            className={'flex-1 flex-col ${styles.flexCenter}'}
+          >
+            <TitleText textStyles={"text-left text-[80px] text-[#904C06]"} title={<>Advantages</>} />
+            <p className='mt-6 mr-24 text-justify text-[#904C06]'>Flexitank containers have an
+              increasingly growing demand as they are economically viable for bulk traders for transporting
+              non-hazardous liquid cargo. They also offer better protection against liquid cargo contamination.</p>
+            <p className='mt-6 mr-24 text-justify text-[#904C06]'>Effectively, flexitanks have made transportation more efficient, cost-effective, and also have
+              a lesser environmental impact. They are becoming a preferred replacement for the traditionally
+              used drums and ISO containers.</p>
+          </motion.div>
+        </motion.div>
 
-    <div className={`${styles.flexStart} ml-24 mr-24 mt-20 w-auto h-auto
+        <div className={`${styles.flexStart} ml-24 mr-24 mt-20 w-auto h-auto
     flex flex-col bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-[20px]`}>
-    <p className="font-semibold text-3xl text-primaryDark">
-    1. Cost - Effective Option
-    </p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>
-    Flexitanks are less expensive than drums, IBCs, and ISO tank containers. The cost of using
-    flexitanks is 33% less than what is needed to spend when transporting bulk liquid using
-    traditional bulk liquid containers.</p>
-    </div>
+          <p className="font-semibold text-3xl text-primaryDark">
+            1. Cost - Effective Option
+          </p>
+          <p className='mt-6 mr-24 text-justify text-[#904C06]'>
+            Flexitanks are less expensive than drums, IBCs, and ISO tank containers. The cost of using
+            flexitanks is 33% less than what is needed to spend when transporting bulk liquid using
+            traditional bulk liquid containers.</p>
+        </div>
 
-    <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
+        <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
     flex flex-col bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-[20px]`}>
-    <p className="font-semibold text-3xl text-primaryDark">
-    2. More Capacity
-    </p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>
-    Flexitank containers can carry 15% more payload than what is carried by IBCs. 44% more
-    than drums. And 50% more than bottles. So, they offer more capacity while being an
-    economically viable option for shippers.</p>
-    </div>
+          <p className="font-semibold text-3xl text-primaryDark">
+            2. More Capacity
+          </p>
+          <p className='mt-6 mr-24 text-justify text-[#904C06]'>
+            Flexitank containers can carry 15% more payload than what is carried by IBCs. 44% more
+            than drums. And 50% more than bottles. So, they offer more capacity while being an
+            economically viable option for shippers.</p>
+        </div>
 
-    <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
+        <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
     flex flex-col bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-[20px]`}>
-    <p className="font-semibold text-3xl text-primaryDark">
-    3. Preserves Product Quality
-    </p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>
-    Flexitanks keep the quality of liquid carefully intact. They are composed of several layers
-    of polyethylene, each fitted with a pump and a valve. Making it airproof, waterproof, and
-    weatherproof. They are mostly designed for single-use which contributes to reducing the risk
-    of contamination considerably</p>
-    </div>
+          <p className="font-semibold text-3xl text-primaryDark">
+            3. Preserves Product Quality
+          </p>
+          <p className='mt-6 mr-24 text-justify text-[#904C06]'>
+            Flexitanks keep the quality of liquid carefully intact. They are composed of several layers
+            of polyethylene, each fitted with a pump and a valve. Making it airproof, waterproof, and
+            weatherproof. They are mostly designed for single-use which contributes to reducing the risk
+            of contamination considerably</p>
+        </div>
 
-    <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
+        <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
     flex flex-col bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-[20px]`}>
-    <p className="font-semibold text-3xl text-primaryDark">
-    4. Faster Loading & Unloading
-    </p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>
-    Flexitank storage containers do not require a forklift to load or unload. This makes the
-    entire loading and unloading process faster by up to 90%. It also makes Flexitanks a cheaper
-    option as compared to the cost of using drums. As well as IBCs with a reduced product loss
-    during the process</p>
-    </div>
+          <p className="font-semibold text-3xl text-primaryDark">
+            4. Faster Loading & Unloading
+          </p>
+          <p className='mt-6 mr-24 text-justify text-[#904C06]'>
+            Flexitank storage containers do not require a forklift to load or unload. This makes the
+            entire loading and unloading process faster by up to 90%. It also makes Flexitanks a cheaper
+            option as compared to the cost of using drums. As well as IBCs with a reduced product loss
+            during the process</p>
+        </div>
 
-    <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
+        <div className={`${styles.flexStart} ml-24 mr-24 mt-10 w-auto h-auto
     flex flex-col bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-[20px]`}>
-    <p className="font-semibold text-3xl text-primaryDark">
-    5. Requires Less(er) Labor
-    </p>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>
-    As flexitanks are convenient to handle, load, and unload, the involvement of the labor is
-    comparatively lesser. This makes the logistics revenue considerably lower.</p>
-    </div>
+          <p className="font-semibold text-3xl text-primaryDark">
+            5. Requires Less(er) Labor
+          </p>
+          <p className='mt-6 mr-24 text-justify text-[#904C06]'>
+            As flexitanks are convenient to handle, load, and unload, the involvement of the labor is
+            comparatively lesser. This makes the logistics revenue considerably lower.</p>
+        </div>
 
-    <TitleText textStyles={"mt-28 ml-20 font-medium text-left text-[50px] text-[#904C06]"}
-    title={<>Recommended Flexitank Capacity by Liquid Type</>}/>
+        <TitleText textStyles={"mt-28 ml-20 font-medium text-left text-[50px] text-[#904C06]"}
+          title={<>Recommended Flexitank Capacity by Liquid Type</>} />
 
-<motion.div
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{once: 'false', amount:0.25}}
-    className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
-    >
-    <motion.div
-    // variants={planetVariants('left')}
-    className={'flex-1 flex-col ${styles.flexCenter} ml-20'}
-    >
-    <p className='mr-24 text-justify text-[#904C06]'>The most widely available flexitank containers
-    come between 10,000 liters and 24,000 liters. Flexitank models are available in 16,000L, 18,000L,
-    20,000L, 22,000L, and 24,000L.Some companies also offer a range of 1,000L up to 100,000L — depending
-    on the customer’s requirements</p>
-    <p className='mt-6 mr-24 font-semibold text-left text-dark'>Here’s a reference table for various types of
-    liquids and corresponding flexitank capacity:</p>
-    </motion.div>
-    <motion.div
-      variants={fadeIn('left', 'tween', 0.2, 1)}
-      className="flex-[1] flex flex-col mr-24">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: 'false', amount: 0.25 }}
+          className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
+        >
+          <motion.div
+            // variants={planetVariants('left')}
+            className={'flex-1 flex-col ${styles.flexCenter} ml-20'}
+          >
+            <p className='mr-24 text-justify text-[#904C06]'>The most widely available flexitank containers
+              come between 10,000 liters and 24,000 liters. Flexitank models are available in 16,000L, 18,000L,
+              20,000L, 22,000L, and 24,000L.Some companies also offer a range of 1,000L up to 100,000L — depending
+              on the customer’s requirements</p>
+            <p className='mt-6 mr-24 font-semibold text-left text-dark'>Here’s a reference table for various types of
+              liquids and corresponding flexitank capacity:</p>
+          </motion.div>
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="flex-[1] flex flex-col mr-24">
 
-    <table className='bg-light shadow-lg border
+            <table className='bg-light shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl'>
-  <thead className='text-dark border border-primaryDark'>
-    <tr>
-      <th className='py-5 border border-primaryDark'>Type of product to be transported</th>
-      <th className='py-5 border border-primaryDark'>Density (kg/m)</th>
-      <th className='py-5 border border-primaryDark'>Recommended size of flexitank</th>
-    </tr>
-  </thead>
-  <tbody className='text-center'>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Latex</td>
-      <td className='py-1 border border-primaryDark'>60-95</td>
-      <td className='py-1 border border-primaryDark'>19,000 L</td>
-    </tr>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Polyol</td>
-      <td className='py-1 border border-primaryDark'>1,100</td>
-      <td className='py-1 border border-primaryDark'>19,000 L</td>
-    </tr>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Glycerin</td>
-      <td className='py-1 border border-primaryDark'>1,260</td>
-      <td className='py-1 border border-primaryDark'>20,000 L</td>
-    </tr>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Palm oil</td>
-      <td className='py-1 border border-primaryDark'>887.5</td>
-      <td className='py-1 border border-primaryDark'>21,000 L</td>
-    </tr>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Olive oil</td>
-      <td className='py-1 border border-primaryDark'>905</td>
-      <td className='py-1 border border-primaryDark'>22,000 L</td>
-    </tr>
-    <tr>
-      <td className='py-1 border border-primaryDark'>Wine</td>
-      <td className='py-1 border border-primaryDark'>285.7</td>
-      <td className='py-1 border border-primaryDark'>24,000 L</td>
-    </tr>
-  </tbody>
-</table>
-      </motion.div>
-    </motion.div>
+              <thead className='text-dark border border-primaryDark'>
+                <tr>
+                  <th className='py-5 border border-primaryDark'>Type of product to be transported</th>
+                  <th className='py-5 border border-primaryDark'>Density (kg/m)</th>
+                  <th className='py-5 border border-primaryDark'>Recommended size of flexitank</th>
+                </tr>
+              </thead>
+              <tbody className='text-center'>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Latex</td>
+                  <td className='py-1 border border-primaryDark'>60-95</td>
+                  <td className='py-1 border border-primaryDark'>19,000 L</td>
+                </tr>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Polyol</td>
+                  <td className='py-1 border border-primaryDark'>1,100</td>
+                  <td className='py-1 border border-primaryDark'>19,000 L</td>
+                </tr>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Glycerin</td>
+                  <td className='py-1 border border-primaryDark'>1,260</td>
+                  <td className='py-1 border border-primaryDark'>20,000 L</td>
+                </tr>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Palm oil</td>
+                  <td className='py-1 border border-primaryDark'>887.5</td>
+                  <td className='py-1 border border-primaryDark'>21,000 L</td>
+                </tr>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Olive oil</td>
+                  <td className='py-1 border border-primaryDark'>905</td>
+                  <td className='py-1 border border-primaryDark'>22,000 L</td>
+                </tr>
+                <tr>
+                  <td className='py-1 border border-primaryDark'>Wine</td>
+                  <td className='py-1 border border-primaryDark'>285.7</td>
+                  <td className='py-1 border border-primaryDark'>24,000 L</td>
+                </tr>
+              </tbody>
+            </table>
+          </motion.div>
+        </motion.div>
 
-    <TitleText textStyles={"mt-28 ml-20 font-semibold text-left text-5xl text-[#904C06]"}
-    title={<>General Misconception For Choosing Flexitank Capacity</>}/>
+        <TitleText textStyles={"mt-28 ml-20 font-semibold text-left text-5xl text-[#904C06]"}
+          title={<>General Misconception For Choosing Flexitank Capacity</>} />
 
-<motion.div
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{once: 'false', amount:0.25}}
-    className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
-    >
-    <motion.div
-    // variants={planetVariants('left')}
-    className={'flex-1 flex-col ${styles.flexCenter} ml-20'}
-    >
-    <p className='mr-24 font-bold text-justify text-Dark'><span className='text-primaryDark'>Myth:</span> A flexitank with a greater capacity as
-    compared to the total quantity of load would be a better choice for the bulk load of liquid</p>
-    </motion.div>
-    <motion.div
-      className="flex-[1] flex flex-col mr-24">
-      <p className='mr-24 font-bold text-justify text-Dark'><span className='text-primaryDark'>Fact:</span> It is the density/specific gravity of the liquid which plays a crucial role in 
-determining the correct size of flexitank to be used.</p>
-      </motion.div>
-    </motion.div>
-
-
-
-    <motion.div
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{once: 'false', amount:0.25}}
-    className={`${styles.innerwidth} mx-auto mt-20 flex lg:flex-row flex-row`}
-    >
-    <motion.div
-      variants={fadeIn('left', 'tween', 0.2, 1)}
-      className="flex-[1] flex items-center flex-col">
-          <img
-      src="../images/flexitanks/usaid-bladder-tank-lg-2.jpg"
-      alt="green bladder water tank"
-      className="w-[70%] object-contain mt-5 mb-10"
-    />
-
-<TitleText textStyles={"text-left mt-10 ml-24 text-[30px] text-[#904C06]"}
-title={<>Get a Flexitank That First Your Needs 
-on xChange</>}/>
-    <p className='mt-6 ml-24 text-justify text-[#904C06]'>
-    So, now you’ve had a chance to learn more about Flexitank. Maybe it’s for you – or maybe
-    you’re looking for other tank containers?Regardless of where you’re at, finding your next
-    container has never been easier.
-    </p>
-      </motion.div>
-
-      <motion.div
-    // variants={planetVariants('left')}
-    className={'flex-1 flex-col ${styles.flexCenter}'}
-    >
-    <TitleText textStyles={"text-left text-5xl text-[#904C06]"} title={<>What Is A Flexitank Made Up Of?</>}/>
-    <p className='mt-6 mr-24 text-justify text-[#904C06]'>A Flexitank container is a bulk liquid
-    storage tank. Made of numerous layers of polyethylene and a woven polypropylene outer covering.
-    They are manufactured using different types of materials such as:</p>
-    <li className='mt-6 text-[#904C06]'>
-    Multilayer polyethylene
-    </li>
-    <li className='text-[#904C06]'>
-    Single and double layer polyethylene
-    </li>
-    <li className='text-[#904C06]'>
-    Barrier tanks
-    </li>
-    <li className='text-[#904C06]'>
-    PVC
-    </li>
-    <li className='text-[#904C06]'>
-    Bottom discharge
-    </li>
-    </motion.div>
-    </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: 'false', amount: 0.25 }}
+          className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
+        >
+          <motion.div
+            // variants={planetVariants('left')}
+            className={'flex-1 flex-col ${styles.flexCenter} ml-20'}
+          >
+            <p className='mr-24 font-bold text-justify text-Dark'><span className='text-primaryDark'>Myth:</span> A flexitank with a greater capacity as
+              compared to the total quantity of load would be a better choice for the bulk load of liquid</p>
+          </motion.div>
+          <motion.div
+            className="flex-[1] flex flex-col mr-24">
+            <p className='mr-24 font-bold text-justify text-Dark'><span className='text-primaryDark'>Fact:</span> It is the density/specific gravity of the liquid which plays a crucial role in
+              determining the correct size of flexitank to be used.</p>
+          </motion.div>
+        </motion.div>
 
 
-    <div className="flex flex-row items-center justify-between max-w-[100%] mt-16 mx-24 gap-[24px]">
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: 'false', amount: 0.25 }}
+          className={`${styles.innerwidth} mx-auto mt-20 flex lg:flex-row flex-row`}
+        >
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="flex-[1] flex items-center flex-col">
+            <img
+              src="../images/flexitanks/usaid-bladder-tank-lg-2.jpg"
+              alt="green bladder water tank"
+              className="w-[70%] object-contain mt-5 mb-10"
+            />
+
+            <TitleText textStyles={"text-left mt-10 ml-24 text-[30px] text-[#904C06]"}
+              title={<>Get a Flexitank That First Your Needs
+                on xChange</>} />
+            <p className='mt-6 ml-24 text-justify text-[#904C06]'>
+              So, now you’ve had a chance to learn more about Flexitank. Maybe it’s for you – or maybe
+              you’re looking for other tank containers?Regardless of where you’re at, finding your next
+              container has never been easier.
+            </p>
+          </motion.div>
+
+          <motion.div
+            // variants={planetVariants('left')}
+            className={'flex-1 flex-col ${styles.flexCenter}'}
+          >
+            <TitleText textStyles={"text-left text-5xl text-[#904C06]"} title={<>What Is A Flexitank Made Up Of?</>} />
+            <p className='mt-6 mr-24 text-justify text-[#904C06]'>A Flexitank container is a bulk liquid
+              storage tank. Made of numerous layers of polyethylene and a woven polypropylene outer covering.
+              They are manufactured using different types of materials such as:</p>
+            <li className='mt-6 text-[#904C06]'>
+              Multilayer polyethylene
+            </li>
+            <li className='text-[#904C06]'>
+              Single and double layer polyethylene
+            </li>
+            <li className='text-[#904C06]'>
+              Barrier tanks
+            </li>
+            <li className='text-[#904C06]'>
+              PVC
+            </li>
+            <li className='text-[#904C06]'>
+              Bottom discharge
+            </li>
+          </motion.div>
+        </motion.div>
+
+
+        <div className="flex flex-row items-center justify-between max-w-[100%] mt-16 mx-24 gap-[24px]">
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    How do you use flexitanks?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    So, now you’ve had a chance to learn more about Flexitank. Maybe it’s for you – or maybe
-    you’re looking for other tank containers?Regardless of where you’re at, finding your next
-    container has never been easier.
-    </p>
-    </div>
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              How do you use flexitanks?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              So, now you’ve had a chance to learn more about Flexitank. Maybe it’s for you – or maybe
+              you’re looking for other tank containers?Regardless of where you’re at, finding your next
+              container has never been easier.
+            </p>
+          </div>
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    How do you unload a flexitank?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    The front end of the flexitank is lifted and rolled slowly towards the door so that the liquid
-    residue can flow easily towards the product valve. The process is continued until the liquid
-    inside the flexitank is pumped off completely.
-    </p>
-    </div>
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              How do you unload a flexitank?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              The front end of the flexitank is lifted and rolled slowly towards the door so that the liquid
+              residue can flow easily towards the product valve. The process is continued until the liquid
+              inside the flexitank is pumped off completely.
+            </p>
+          </div>
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    Are flexitanks reusable?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    While most flexitanks are made for temporary, one-time use, others can contain a liquid for
-    years at a time, or be reused as well.
-    </p>
-    </div>
-</div>
-<div className="flex flex-row items-center justify-between max-w-[100%] mt-6 mx-24 gap-[24px]">
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              Are flexitanks reusable?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              While most flexitanks are made for temporary, one-time use, others can contain a liquid for
+              years at a time, or be reused as well.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-row items-center justify-between max-w-[100%] mt-6 mx-24 gap-[24px]">
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    How many liters of liquid can a flexitank hold?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    Depending on the density of the liquid, these flexitanks are available with capacities
-    ranging from 10,000 to 24,000 liters. Some companies also offer a range of 1,000L up to 100,000L.
-    </p>
-    </div>
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              How many liters of liquid can a flexitank hold?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              Depending on the density of the liquid, these flexitanks are available with capacities
+              ranging from 10,000 to 24,000 liters. Some companies also offer a range of 1,000L up to 100,000L.
+            </p>
+          </div>
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    How much does a flexitank cost?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    Flexitanks are very cost-efficient. The cost of the flexitank depends on what type of Flexi bag
-    is purchased. The price of a flexitank container set ranges from 100 USD/set up to 500 USD/set.
-    </p>
-    </div>
-    <div className={`${styles.flexStart} w-[500px] h-[320px]
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              How much does a flexitank cost?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              Flexitanks are very cost-efficient. The cost of the flexitank depends on what type of Flexi bag
+              is purchased. The price of a flexitank container set ranges from 100 USD/set up to 500 USD/set.
+            </p>
+          </div>
+          <div className={`${styles.flexStart} w-[500px] h-[320px]
     flex flex-col items-start bg-[#FFFFFF] shadow-lg border
     border-solid p-10 border-[#904C06] hover:shadow-xl rounded-xl`}>
-    <p className='text-left text-xl font-bold text-[#904C06]'>
-    What liquids can be transported in a Flexitank?
-    </p>
-    <p className='mt-3 text-left text-[#904C06]'>
-    Drinking water, fruit juices and concentrates, wine, sweeterners, malt extracts, olive oils,
-    all type of edible oils, paints, chemicals, bio diesel … liquid detergents, lubricants, inks,
-    and a lot of other free flowing liquid items.
-    </p>
-    </div>
-</div>
+            <p className='text-left text-xl font-bold text-[#904C06]'>
+              What liquids can be transported in a Flexitank?
+            </p>
+            <p className='mt-3 text-left text-[#904C06]'>
+              Drinking water, fruit juices and concentrates, wine, sweeterners, malt extracts, olive oils,
+              all type of edible oils, paints, chemicals, bio diesel … liquid detergents, lubricants, inks,
+              and a lot of other free flowing liquid items.
+            </p>
+          </div>
+        </div>
 
-  </section>
-  </>
+      </section>
+    </>
   )
 }
 
