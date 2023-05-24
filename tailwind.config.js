@@ -5,14 +5,14 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
 
-  
+
   content: [], content: [
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: 'class',
 
-  
+
   theme: {
     extend: {
       fontFamily: {
@@ -81,4 +81,3 @@ module.exports = {
   },
   plugins: [],
 }
-

@@ -37,7 +37,7 @@ const flexitank = () => {
    bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
         <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
-        <div className='flex flex-row lg:items-center  text-dark'>
+          <div className='flex flex-row lg:items-center  text-dark'>
             <div className='w-3/5 xl:w-4/5 lg:w-full'>
               <div className="my-32 lg:hidden"></div>
               <AnimatedText text="Crown Flexitanks"
@@ -45,10 +45,10 @@ const flexitank = () => {
             </div>
             <div className='flex flex-col ml-28 mt-20'>
 
-            <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>The flexitanks commonly used by the industry can hold up to 24,000 liters of liquid cargo.
+              <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>The flexitanks commonly used by the industry can hold up to 24,000 liters of liquid cargo.
                 Flexitanks are used for the transportation of non-hazardous liquids.</p>
-           <p className='my-6  pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>
-           To give a technical definition: "Hermetically sealed, collapsible, and flexible bag or
+              <p className='my-6  pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>
+                To give a technical definition: "Hermetically sealed, collapsible, and flexible bag or
                 bladder, which is fitted into a twenty-foot Dry Van (DV) or standard conatainer."</p>
             </div>
 
@@ -59,12 +59,12 @@ const flexitank = () => {
 
       </main>
 
-<FlexitankUses/>
-<FlexitankCarry/>
-<FlexitankAdvantages/>
-<FlexitankCapacity/>
-<FlexitankMisconception/>
-<FlexitankxChange/>
+      <FlexitankUses />
+      <FlexitankCarry />
+      <FlexitankAdvantages />
+      <FlexitankCapacity />
+      <FlexitankMisconception />
+      <FlexitankxChange />
 
     </>
   )
@@ -72,4 +72,4 @@ const flexitank = () => {
 
 export default flexitank
 
-{/*  */}
+{/*  */ }

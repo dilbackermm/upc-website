@@ -33,36 +33,36 @@ const dunnagebag = () => {
             (max-width: 1200px) 50vw,       
             33vw"
       />
-     
+
       <main className="  flex flex-col  text-dark w-full min-h-screen 
    bg-gradient-to-r bg-top from-[#4B2204] to-[#9c6618]/80  pb-0 mb-0 lg:items-start ">
-         <Navbar className='bg-transparent' />
+        <Navbar className='bg-transparent' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
           <div className='flex flex-col lg:items-center  text-light'>
             <div className='w-3/5 xl:w-4/5 lg:w-full'>
               <div className="my-32 lg:hidden"></div>
-            <AnimatedText text="crown Dunnage Bags "
-          className='   pt-0 text-secondaryLight !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
-           <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>Dunnage bags are poly bladders surrounded by ply’s 
-           of poly woven material with a valve that can inflate or deflate the bags.</p>
-           <p className='my-6  pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>Dunnage bags are essentially padded bags to secure the 
-           goods in place and protect them while transporting by air, sea, rail or road.</p>
+              <AnimatedText text="crown Dunnage Bags "
+                className='   pt-0 text-secondaryLight !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
+              <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>Dunnage bags are poly bladders surrounded by ply’s
+                of poly woven material with a valve that can inflate or deflate the bags.</p>
+              <p className='my-6  pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>Dunnage bags are essentially padded bags to secure the
+                goods in place and protect them while transporting by air, sea, rail or road.</p>
             </div>
-          
+
           </div>
           <div className="w-2/5 xl:w-1/5"></div>
-          
+
         </Layout>
 
       </main>
-<DunnageContent />
-<DunnageBenefits />
-<DunnageSize />
-<DunnageService />
+      <DunnageContent />
+      <DunnageBenefits />
+      <DunnageSize />
+      <DunnageService />
     </>
   )
 }
 
 export default dunnagebag
 
-{/*  */}
+{/*  */ }
