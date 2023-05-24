@@ -25,7 +25,7 @@ const barrierliners = () => {
       </Head>
 
       <Image src={barrierliner2} alt="dunnage"
-        className='  -z-10 absolute w-full h-screen mb-0 object-cover'   
+        className='  -z-10 absolute w-full min-h-screen mb-0 object-cover'   
       />
 
       <main className="  flex flex-col  text-dark w-full min-h-screen 
