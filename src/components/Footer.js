@@ -77,10 +77,8 @@ const Footer = () => {
 
 <div className='flex flex-col basis-2/10 lg:mt-12 sm:mt-16 ms-5 sm:ms-0 '>
 <div className="flex flex-raw">
-<a href="/"><TwitterIcon className="mx-2 pb-3 w-6" /></a>
-<a href="/"><FacebookIcon  className="mx-2 pb-3 w-6" /></a>
-<a href="/"><InstagramIcon  className="mx-2 pb-3 w-6" /></a>
-<a href="/"><LinkedInIcon  className="mx-2 pb-3 w-6 " /></a>
+<a href="/"><FacebookIcon  className="mx-3 pb-3 w-9" /></a>
+<a href="/"><LinkedInIcon  className="mx-3 pb-3 w-9 " /></a>
 </div>
 </div>
 

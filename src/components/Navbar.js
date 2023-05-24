@@ -69,7 +69,10 @@ const Navbar = ( {className = "" }) => {
             ralative z-10 lg:px-16 md:px-12 sm:px-8 ${className}`} 
         >
      <div className=' '>
+        <Link href="/" >
+       
                 <Logo />
+                </Link>
             </div>
 
             <button className=' fixed lg:right-9 right-12 flex-col justify-center items-center shadow
@@ -82,31 +85,7 @@ const Navbar = ( {className = "" }) => {
                 ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'} `} ></span>
             </button>
 
-            {/* <div className=' w-full flex justify-between itmes-center lg:hidden ' >
-
-
-
-
-                <nav className="flex items-center justify-center flex-wrap">
-
-
-                </nav>
-
-                <nav>
-                    <CustomLink href="/" title="Home" className='mr-4 text-primaryDark' />
-                    <CustomLink href="/about" title="About" className='mx-4 text-primaryDark' />
-                    <CustomLink href="/projects" title="Prducts" className='mx-4 text-primaryDark ' />
-                    <CustomLink href="/articles" title="Contact" className='ml-4 text-primaryDark ' />
-                    <Link href="/" target='_blank'
-                        className=' rounded-lg ml-8 bg-primaryDark text-light hover:bg-dark p-2 px-6 text-normal 
-                        font-semibold sm:px-4 sm:text-base'
-                    >
-                        
-                        Shop </Link>
-                </nav>
-
-
-            </div> */}
+          
 
 
             {
