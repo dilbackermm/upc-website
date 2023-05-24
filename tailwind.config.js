@@ -20,43 +20,16 @@ module.exports = {
       },
       colors: {
         dark: "#4B2204",
-        light: "#F0E7D5",
-        primarylight: "#FDF8E5",
+        light: "#FDF8E5",
+        primarylight: "#FFFFFF",
         secondaryLight: '#E2C492',
-        primary: "#B63E96", // 240,86,199
-        primaryDark: "#9c6618", // 80,230,217
+        primary: "#B63E96",
+        primaryDark: "#9c6618", 
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
-      backgroundImage: {
-
-        darkGradient: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
-
-        circularLight:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
-
-        circularDark:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px,#1b1b1b 100px)",
-
-        circularLightLg:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
-
-        circularDarkLg:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px,#1b1b1b 80px)",
-
-        circularLightMd:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
-
-        circularDarkMd:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 60px)",
-
-        circularLightSm:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
-
-        circularDarkSm:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)",
-      }
+      
     },
     screens: {
       "2xl": { max: "1535px" },
@@ -80,4 +53,17 @@ module.exports = {
     // => @Media(max-width: 1535px)
   },
   plugins: [],
+<<<<<<< HEAD
 }
+=======
+}
+
+// primarylight: "#FDF8E5"
+
+// dark: "#4B2204",
+// light: "#F0E7D5",
+// primarylight: "#FDF8E5",
+// secondaryLight: '#E2C492',
+// primary: "#B63E96",
+// primaryDark: "#9c6618",
+>>>>>>> 84b0fdd78680205d0b8a8ddb43ebe3dab1c9b44f

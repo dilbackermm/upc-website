@@ -59,7 +59,7 @@ const Footer = () => {
      <FooterLink href="/dunnagebag" title="Dunnage Bags" />
     </li>
     <li className='py-2'>
-     <FooterLink href="/" title="Barrier Liners" />
+     <FooterLink href="/barrierliners" title="Barrier Liners" />
     </li>
     <li className='py-2'>
      <FooterLink href="/silobag" title="Silo Bags" />
@@ -82,7 +82,6 @@ const Footer = () => {
 <a href="/"><InstagramIcon  className="mx-2 pb-3 w-6" /></a>
 <a href="/"><LinkedInIcon  className="mx-2 pb-3 w-6 " /></a>
 </div>
-<input type="email" id="email" class="bg-light border text-base text-dark  border-secondaryLihgt mt-0 block w-full px-2 py-1 rounded-lg  focus:outline-none " placeholder=" email" required></input>
 </div>
 
         </div>
