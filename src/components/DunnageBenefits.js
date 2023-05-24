@@ -37,7 +37,8 @@ const DunnageBenefits = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='pt-0 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Benefits of UPC Dunnage Bags " className='!pt-6 pb-14' />
-                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[500px] xl:w-[420px] right-60 xl:right-32  z-20 -translate-y-16 
+                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-20 -translate-y-16
+                2xl:translate-y-5
                 lg:relative lg:right-auto lg:m-auto lg:pt-6' />
                 <div className='py-12 lg:py-6'>
 
@@ -90,7 +91,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             <p className='text-lg lg:text-base xs:text-sm py-2'>
                                 Products being shipped can slide around, drop, get squished, or be
                                 subject to collision, which can lead to shock and vibration. Dunnage
-                                is always put in place to act as a shock absorber to prevent damage.<br/><br/><br/>
+                                is always put in place to act as a shock absorber to prevent damage.<br /><br /><br />
                             </p>
                         </div>
                     </div>
@@ -205,7 +206,7 @@ const DunnageBenefits = ({ className = "" }) => {
 
 
                     </div>
-                    
+
                 </div>
 
             </Layout>
