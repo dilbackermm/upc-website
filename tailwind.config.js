@@ -24,12 +24,12 @@ module.exports = {
         primarylight: "#FFFFFF",
         secondaryLight: '#E2C492',
         primary: "#B63E96",
-        primaryDark: "#9c6618", 
+        primaryDark: "#9c6618",
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
-      
+
     },
     screens: {
       "2xl": { max: "1535px" },
@@ -53,17 +53,4 @@ module.exports = {
     // => @Media(max-width: 1535px)
   },
   plugins: [],
-<<<<<<< HEAD
 }
-=======
-}
-
-// primarylight: "#FDF8E5"
-
-// dark: "#4B2204",
-// light: "#F0E7D5",
-// primarylight: "#FDF8E5",
-// secondaryLight: '#E2C492',
-// primary: "#B63E96",
-// primaryDark: "#9c6618",
->>>>>>> 84b0fdd78680205d0b8a8ddb43ebe3dab1c9b44f
