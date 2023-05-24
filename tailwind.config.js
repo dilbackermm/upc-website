@@ -20,11 +20,11 @@ module.exports = {
       },
       colors: {
         dark: "#4B2204",
-        light: "#F0E7D5",
-        primarylight: "#FDF8E5",
+        light: "#FDF8E5",
+        primarylight: "#FFFFFF",
         secondaryLight: '#E2C492',
-        primary: "#B63E96", // 240,86,199
-        primaryDark: "#9c6618", // 80,230,217
+        primary: "#B63E96",
+        primaryDark: "#9c6618", 
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
@@ -56,3 +56,10 @@ module.exports = {
 }
 
 // primarylight: "#FDF8E5"
+
+// dark: "#4B2204",
+// light: "#F0E7D5",
+// primarylight: "#FDF8E5",
+// secondaryLight: '#E2C492',
+// primary: "#B63E96",
+// primaryDark: "#9c6618",
