@@ -36,7 +36,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     }
 
     return (
-        <button href={href} className={`${className} relative group text-light text-2xl text-center my-6`} onClick={handleClick}>
+        <button href={href} className={`${className} relative group text-light text-2xl lg:text-lg text-left my-4 lg:my-2 font-light`} onClick={handleClick}>
             {title}
 
             <span className={`h-[1px] inline-block  bg-light  absolute left-0 -bottom-1
@@ -93,15 +93,31 @@ const Navbar = ({ className = "" }) => {
 
                     <motion.div
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        className=' min-w-[80vw] lg:min-w-[70vw] min-h-[90vh] lg:min-h-[70vh] flex flex-col justify-between z-40 
+                        animate={{ scale: 1, opacity: 1, }}
+                        className=' min-w-[80vw] lg:min-w-full min-h-[80vh] lg:min-h-full flex flex-col justify-between z-40 
         itmes-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y1/2
-        bg-primaryDark/90 rounded-2xl py-32 backdrop-blur' >
-                        <nav className='flex items-center flex-col justif-center'>
+        bg-primaryDark/90 rounded-2xl lg:rounded-none py-32 backdrop-blur-xl' >
+                        <nav className='flex justify-around lg:flex-col items-start'>
+                        <div className='mx-12 lg:hidden flex items-start flex-col justif-center self-center'></div>
+                            <div className='mx-12 flex items-left flex-col justif-center text-left'>
+                            <h2 className='pb-3 text-3xl text-left font-bold text-light'>Company</h2>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                             <CustomMobileLink href="/#aboutus" title="About" className='' toggle={handleClick} />
                             <CustomMobileLink href="/#products" title="Products" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/#contactus" title="Contact" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/#contactus" title="Contact" className='' toggle={handleClick} />   
+                            </div>
+                            <div className='mx-12 lg:pt-6 flex items-left flex-col justif-center  text-left'>
+                                <h2 className='pb-3 text-3xl text-left font-bold text-light'>Products</h2>
+                            <CustomMobileLink href="/dunnagebag" title="Dunnage Bags" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/barrierliners" title="Barrier Liners" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/silobag" title="Silo Bags" className='' toggle={handleClick} />   
+                            <CustomMobileLink href="/flexitank" title="Flexitanks" className='' toggle={handleClick} />   
+                            <CustomMobileLink href="/accessories" title="Accessories" className='' toggle={handleClick} />   
+                            </div>
+                            
+                          
+                            <div className='mx-12 lg:hidden flex items-center flex-col justif-center self-center'></div>
+                            
                         </nav>
 
 
