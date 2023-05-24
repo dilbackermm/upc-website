@@ -24,12 +24,12 @@ module.exports = {
         primarylight: "#FFFFFF",
         secondaryLight: '#E2C492',
         primary: "#B63E96",
-        primaryDark: "#9c6618", 
+        primaryDark: "#9c6618",
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
-      
+
     },
     screens: {
       "2xl": { max: "1535px" },
