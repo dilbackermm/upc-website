@@ -18,7 +18,7 @@ const Product = ({className = "" }) => {
 
     <main className={` pt-0 flex items-center text-dark 
        bg-primarylight pb-0 mb-0 ${className} `} id='products' >
-      <Layout className='pt-0 bg-transparent z-20 mx-0'>
+      <Layout className='pt-0 bg-transparent z-0 mx-0'>
       <AnimatedText
                 text={"Products "}
                 className='pt-12 text-7xl text-primaryDark font-bold text-center' />

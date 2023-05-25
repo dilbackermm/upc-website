@@ -36,7 +36,7 @@ const dunnagebag = () => {
 
 <main className="  flex flex-col  text-dark w-full min-h-screen 
    bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
-        <Navbar className='bg-transparent' />
+        <Navbar className='bg-transparent z-20' />
         <Layout className=' pt-0 pb-0 items-center bg-transparent '>
           <div className='flex flex-col lg:items-center text-dark'>
             <div className='w-3/5 xl:w-full lg:w-full'>

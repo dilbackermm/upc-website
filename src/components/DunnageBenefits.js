@@ -37,9 +37,9 @@ const DunnageBenefits = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} >
             <Layout className='!pt-0 !pb-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Benefits of UPC Dunnage Bags " className='!pt-6 pb-14' />
-                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-20 -translate-y-16
+                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-10 -translate-y-16
                 2xl:translate-y-5
-                lg:relative lg:z-10 lg:right-auto lg:m-auto lg:pt-6' />
+                lg:relative lg:z-0 lg:right-auto lg:m-auto lg:pt-6' />
                 <div className='py-12 lg:py-6'>
 
                     <ul className='mt-12 lg:mt-1 tex-left border-t border-y-primaryDark'>

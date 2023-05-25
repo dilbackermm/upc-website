@@ -14,7 +14,7 @@ const Welcome = ({ className = "" }) => {
     // bg-gradient-to-r bg-top from-[#4B2204] to-[#9c6618]
     <main className={` pt-0  flex items-center bg-primarylight text-dark w-full min-h-screen 
        pb-0 mb-0 ${className} `} >
-      <Layout className='pt-32 bg-transparent z-20 mx-32 xl:mx-12 lg:mx-6'>
+      <Layout className='!py-0 !lg:py-2 bg-transparent z-0 mx-32 xl:mx-12 lg:mx-6'>
         <div className="grid grid-cols-2 lg:flex lg:flex-col gap-16 2xl:gap-9 xl:gap-6">
           <div>
             <motion.div

@@ -24,8 +24,8 @@ import indicon10 from '../../public/images/industry/industry-10.png'
 const Industry = ({ img, title }) => {
   return (
     <motion.li
-    initial={{y:200}}
-    whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
+    initial={{x:-200}}
+    whileInView={{x:0, transition:{duration:0.9, ease:"easeInOut"}}}
 viewport={{once:true}}
       whileHover={{ scale: 1.1, originX: 0 }}
       transition={{ type: 'tween', }}
@@ -44,9 +44,9 @@ viewport={{once:true}}
 
 const Industries = () => {
   return (
-    <main className="-mt-10 -pt-30 z-100 flex items-center text-light w-full min-h-screen 
+    <main className="-mt-10 -pt-30 z-0 flex items-center text-light w-full min-h-screen 
        bg-primarylight  " >
-      <Layout className='mx-24 py-6 xl:mr-3 lg:mr-2 md:mx-4 sm:mx-1 pt-4 bg-transparent text-light '>
+      <Layout className='mx-24 !py-0 lg:py-5 xl:mr-3 lg:mr-2 md:mx-4 sm:mx-1 bg-transparent text-light '>
         <div className="flex py-6  lg:flex-col-reverse items-center pb-3">
           <div className='w-3/5 lg:w-full py-6'>
             <ul>
@@ -93,7 +93,7 @@ const Industries = () => {
             </ul>
           </div>
           <div className='w-2/5 lg:w-full xl:ml-2 xl:p-2'>
-            <AnimatedText text="Industries we serve" className='text-primaryDark' />
+            <AnimatedText text="Industries we serve" className='text-primaryDark lg:pt-6' />
           </div>
         </div>
       </Layout>

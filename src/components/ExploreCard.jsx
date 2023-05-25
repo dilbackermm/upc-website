@@ -9,7 +9,7 @@ const ExploreCard = ({ id, imgUrl, title, conte, index, active, handleClick }) =
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]  shadow-xl' : 'lg:flex-[0.5] flex-[2] shadow-sm '
       } flex items-center justify-center min-w-[170px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex
-  cursor-pointer border border-solid border-primaryDark rounded-3xl  `}
+  cursor-pointer border border-solid border-primaryDark lg:border-none rounded-3xl  `}
     whileHover={() => handleClick(id)}
     
   >

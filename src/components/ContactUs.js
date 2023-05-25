@@ -13,7 +13,7 @@ const ContactUs = ({ className = "" }) => {
   return (
     <main className={` flex pt-9 bg-light/75 text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus' >
-      <Layout className='!pt-6 bg-transparent z-20 mx-32 xl:mx-12 lg:mx-6'>
+      <Layout className='!pt-6 bg-transparent z-0 mx-32 xl:mx-12 lg:mx-6'>
         <AnimatedText text="Contact Us" className='mb-16 !text-8xl lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
         <div className="flex lg:flex-col-reverse items-center">
           <div className="w-2/5 lg:w-full  flex mx-3 flex-col ">

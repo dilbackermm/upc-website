@@ -10,8 +10,8 @@ import tick from '../../public/images/svgs/tick.svg'
 const Points = ({ point }) => {
     return (
       <motion.li
-      initial={{y:200}}
-      whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
+      initial={{x:-100}}
+      whileInView={{x:0, transition:{duration:0.9, ease:"easeInOut"}}}
   viewport={{once:true}}
         whileHover={{ scale: 1.1, originX: 0 }}
         transition={{ type: 'tween', }}
@@ -30,15 +30,11 @@ const WhyUpc = () => {
     <div className="flex py-6  lg:flex-col items-start pb-3">
          <div className="w-1/2 lg:w-full flex flex-col">
         <AnimatedText text="Why UPC?" className='text-primaryDark text-left' />
-        <motion.p
-                            initial={{ y: 200 }}
-                            whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='p-2 pt-9 text-xl  text-dark font-normal leading-[2.25rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+        <p className='p-2 pt-9 text-xl  text-dark font-normal leading-[2.25rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             At UPC we invest quality time and take great effort in understanding our client-packaging needs
                             and customize our products accordingly to achieve the best results. <br />
                             We are internationally accredited with ISO 9001:2015, FSSC 22000, and BRC certifications.
-                        </motion.p>
+                        </p>
         </div>
         <div className="w-1/2 lg:w-full">
 <p className='text-dark font-semibold text-xl sm-text-lg xs:text-base lg:pt-6'>The core values that make clients come back to us for more</p>
