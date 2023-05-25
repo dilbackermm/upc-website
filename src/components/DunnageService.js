@@ -30,7 +30,7 @@ const DunnageService = ({ className = "" }) => {
         <main className={` flex pt-3 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pt-0 !pb-0 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
-                <h1 className='text-center text-5xl lg:text-4xl font-bold xs:text-3xl'>Certified Quality and Reliable Customer Services</h1>
+                <h1 className='pt-12 lg:pt-6 text-center text-5xl lg:text-4xl font-bold xs:text-3xl'>Certified Quality and Reliable Customer Services</h1>
                 <div className="">
                     <div className="w-full  text-primaryDark">
                         <p className='py-6  text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>Now you too can become of our global network as our channel
