@@ -10,15 +10,15 @@ const DunnageContent = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pt-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex items-center lg:flex-col ">
-                    <div className="w-4/12 lg:flex-col">
+                    <div className="w-4/12 lg:w-full lg:flex-col">
                         <Image src={dunnagePic2} alt='dunnage bag mr-12' />
                     </div>
-                    <div className="w-8/12 lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0">
+                    <div className="w-8/12 lg:w-full lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0 lg:pt-3">
                         <motion.p
                             initial={{ y: 200 }}
                             whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+                            className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             In short Dunnage bags holds the cargo in place within the containers while transporting.
                             It can be padded in any manner based on the goods it protects. Like right from bubble
                             wraps for smaller items to solid packaging for large items.
@@ -28,12 +28,16 @@ const DunnageContent = ({ className = "" }) => {
                             initial={{ y: 200 }}
                             whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
-                            To protect the goods in the containers from shifting vertically, horizontally, or transversely, buffering
-                            is essential to protect the goods and keep them intact till their destination is reached. For this, the
-                            right dunnage bags are needed.
+                            className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+                           Dunnage bags, also known as airbags, and inflatable bags, are used to secure and 
+                           stabilize cargo. Introduced around 1970, dunnage bags provide convenient and 
+                           cost-effective cargo stabilization in ISO sea containers, closed railcars, 
+                           trucks, and oceangoing vessels.
                         </motion.p>
-                        <div className="flex items-center lg:flex-col">
+                        
+                    </div>
+                </div>
+                <div className="flex items-center lg:flex-col">
                             <div className="py-9 mx-2 flex flex-col w-1/2 lg:w-full">
                                 <motion.div
                                     initial={{ y: 300, opacity:0 }}
@@ -66,8 +70,6 @@ const DunnageContent = ({ className = "" }) => {
                                 </motion.div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </Layout>
         </main>
     )
