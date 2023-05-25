@@ -13,6 +13,7 @@ import SilobagAdvantages from '@/components/SilobagAdvantages'
 import SilobagMounting from '@/components/SilobagMounting'
 import SilobagSpecification from '@/components/SilobagSpecification'
 import SilobagSizes from '@/components/SilobagSizes'
+import SilobagEnding from '@/components/SilobagEnding'
 
 {/* bg-gradient-to-r from-[#F3E8D6] to-[#DBC4AC] */ }
 
@@ -39,34 +40,26 @@ const silobag = () => {
    bg-gradient-to-r bg-top from-[#4B2204] to-[#9c6618]/80 pb-0 mb-0 lg:items-start ">
         <Navbar className='bg-transparent' />
         <Layout className='sm:py-32 pt-0 pb-0 items-center bg-transparent '>
-          <div className='flex flex-col lg:items-center  text-light'>
-            <div className='w-3/5 xl:w-4/5 lg:w-full'>
-              <div className="my-32 lg:hidden"></div>
-              <AnimatedText text="Crown Silo Bags "
-                className='pt-0 text-secondaryLight !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
-              <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>
+          <div className='flex flex-col lg:items-center text-light'>
+            <div className='w-3/5 xl:w-full lg:w-full'>
+              <AnimatedText text="Crown Silo Bags"
+                className='   pt-24 2xl:pt-6 xl:pt-3 lg:pt-16 sm:pt-6 text-secondaryLight !text-8xl !text-left xl:!text-6xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
+              <p className='pt-12 pr-24 sm:pr-0 text-2xl 2xl:text-xl md:text-lg sm:text-base  '>
                 Crown Silo Bags are made of a seven-layers of Blown extruded technology with various polymers to
                 achieve the best quality Silo Bags (Polyethylene) about 180-250 micron.</p>
             </div>
-
           </div>
-          <div className="w-2/5 xl:w-1/5"></div>
-
         </Layout>
-
       </main>
-
       <SilobagMain />
       <SilobagApplications />
       <SilobagAdvantages />
       <SilobagSpecification />
       <SilobagSizes />
       <SilobagMounting />
-      {/* <SilobagEnding /> */}
+      <SilobagEnding />
     </>
   )
 }
 
 export default silobag
-
-{/*  */ }

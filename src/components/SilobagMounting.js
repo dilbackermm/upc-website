@@ -13,7 +13,7 @@ import SiloMo from './SiloMo';
 
 const SilobagMounting = ({ className = "" }) => {
     return (
-        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
+        <main className={` flex pt-10 bg-primarylight text-dark w-full min-h-auto 
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pb-20 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Silo Bag Mounting Instructions" className='sm:!text-4xl pb-12 !text-6xl text-primaryDark' />
