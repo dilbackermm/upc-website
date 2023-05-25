@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
      
       <Image src={dunnageBag} alt="dunnage" 
-              className='  -z-10 absolute min-h-screen  left-10 top-[61px] w-[50%] h-auto mb-0  
+              className='  -z-10 absolute min-h-screen  left-10 top-[61px]  w-[50%] 2xl:w-[45%] h-auto mb-0  
                lg:w-full xl:pr-10 xl:pt-24 xl:pb-6 
               lg:hidden' 
               priority
@@ -45,9 +45,9 @@ export default function Home() {
             </div>
             <div className="w-1/2  pt-36 2xl:pt-6 xl:pt-3 lg:pt-6  flex flex-col items-center pl-6 self-center lg:w-full lg:text-center sm:pt-3 ">
               <AnimatedText text="Protect Your Goods! " 
-              className='!text-8xl !text-left 2xl:!text-6xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
+              className='!text-8xl !text-left 2xl:!text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
 
-              <p className='my-6 2xl:my-5 text-2xl 2xl:text-xl md:text-lg sm:text-base font-light '>high-quality, reliable and 
+              <p className='my-6 2xl:my-5 text-2xl 2xl:text-xl xl:text-lg md:text-lg sm:text-base font-light '>high-quality, reliable and 
               cost-effective dunnage air bags to protect your cargo from damage during transit.</p>
               <div className='flex items-center self-start mt-2 lg:self-center '>
                 <Link href="/dummy.pdf" target={"_blank"}
