@@ -13,13 +13,13 @@ const DunnageSize = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pt-0 !pb-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' />
-                <div className="flex lg:flex-col-reverse">
+                <div className="flex items-center lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-3">
                         <motion.p
                             initial={{ y: 200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>With the right selection, you can rest assured that your goods
+                            className='py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 xl:leading-8 text-left'>With the right selection, you can rest assured that your goods
                             will reach their destination in perfect condition.Customised dunnage bags - selected based on the goods,
                             economies, weight, quantity, and mode of transportation.
                         </motion.p>

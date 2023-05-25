@@ -10,8 +10,8 @@ import Image from 'next/image'
 const Points = ({ point }) => {
     return (
       <motion.li
-      initial={{y:200}}
-      whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
+      initial={{x: -200}}
+      whileInView={{x:0, transition:{duration:0.9, ease:"easeInOut"}}}
   viewport={{once:true}}
         whileHover={{ scale: 1.1, originX: 0 }}
         transition={{ type: 'tween', }}
@@ -29,15 +29,11 @@ const DunnageService = ({ className = "" }) => {
     return (
         <main className={` flex pt-3 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='pt-0 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
+            <Layout className='!pt-0 !pb-0 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <h1 className='text-center text-5xl lg:text-4xl font-bold xs:text-3xl'>Certified Quality and Reliable Customer Services</h1>
                 <div className="">
                     <div className="w-full  text-primaryDark">
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>Now you too can become of our global network as our channel
+                        <p className='py-6  text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>Now you too can become of our global network as our channel
                             partner. What we are looking at is a long through mutual respect
                             and honest coorperation between the partners.
                             What you get in return is fast and unrestricted customer service.
@@ -46,7 +42,7 @@ const DunnageService = ({ className = "" }) => {
                             Our highly trained team with collective years of experience both
                             in the industry and commercial enterprises to back you up.
                             What we promise is:
-                        </motion.p>
+                        </p>
                     </div>
                     <div className="w-full px-5 pb-6 mx-auto">
 
