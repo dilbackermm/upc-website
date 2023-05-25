@@ -16,7 +16,7 @@ const SilobagMounting = ({ className = "" }) => {
         <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pb-20 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6 '>
-                <AnimatedText text="Silo Bag Mounting Instructions" className='pb-12 !text-6xl text-primaryDark' />
+                <AnimatedText text="Silo Bag Mounting Instructions" className='sm:!text-4xl pb-12 !text-6xl text-primaryDark' />
                 <motion.div
                     variants={fadeIn('left', 'tween', 0.2, 1)}>
                     {silomo.map((silomo, index) => (

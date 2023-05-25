@@ -11,7 +11,7 @@ const SiloMo = ({ number, text }) => (
     <div className='relative'>
       <div className='dot absolute -ml-3 bg-primaryDark h-6 w-6 rounded-full border-8 border-double border-light'>
       </div>
-      <div className='pl-10 text-xl text-dark'>
+      <div className='pl-10 text-xl xs:text-base font-medium text-dark'>
         {text}
       </div>
     </div>
