@@ -10,9 +10,9 @@ import rarrow from '../../public/images/svgs/rightarrow.svg'
 
 const SilobagSpecification = ({ className = "" }) => {
     return (
-        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
+        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-auto 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='sm:p-6 sm:!mb-10 !pb-0 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
+            <Layout className='sm:p-6 sm:!mb-10 !pb-0 !pt-20 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
                 <AnimatedText text="Silo Bag Specifications" className='sm:!text-4xl pb-12 !text-6xl text-primaryDark' />
                 <div className='lg:hidden'>
                     <table class="w-full p-5 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
@@ -93,31 +93,31 @@ const SilobagSpecification = ({ className = "" }) => {
                         </tbody>
                     </table>
                 </div>
-                <div className="py-12">
+                <div className="sm:py-0 py-12">
                     <motion.p
                         initial={{ y: 200, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-medium text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
+                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
                         Three or five or seven co-extruded layers of polyethylene plastic film UV protected.
                     </motion.p>
                     <motion.p
                         initial={{ y: 200, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-medium text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
+                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
                         Sizes:
-                        a. Diameter of 7 to 12 feet
-                        b.Length of 60m, 75 m, 120 m or higher (inhouse automatic folding machine)
+                        <p className='py-3'>a. Diameter of 7 to 12 feet</p>
+                        <p>b. Length of 60m, 75 m, 120 m or higher (inhouse automatic folding machine)</p>
                     </motion.p>
                     <motion.p
                         initial={{ y: 200, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-medium text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
+                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
                         Capacity ranges from 180-250 tons or higher (for dry products)
-                        a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.
-                        b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.
+                        <p className='py-3'> a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.</p>
+                        <p> b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
                     </motion.p>
                 </div>
             </Layout>

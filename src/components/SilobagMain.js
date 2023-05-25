@@ -2,16 +2,16 @@ import React from 'react'
 import Layout from './Layout'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
+import dunnagePic from '../../public/images/silo/silo.png'
 import tick from '../../public/images/svgs/tick.svg'
 import AnimatedText from './AnimatedText'
 
 
 const SilobagMain = ({ className = "" }) => {
     return (
-        <main className={`flex pt-0 bg-primarylight text-dark w-full min-h-screen 
-    pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='!pb-0 pt-20 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
+        <main className={`flex pt-0 bg-primarylight text-dark w-full min-h-auto 
+    pb-0 mb-0 ${className} `}>
+            <Layout className='-!mb-20 pt-20 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 {/* <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' /> */}
                 <div className="flex lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-6">

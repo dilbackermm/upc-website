@@ -14,9 +14,9 @@ import rarrow from '../../public/images/svgs/rightarrow.svg'
 
 const SilobagSizes = ({ className = "" }) => {
     return (
-        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
+        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-auto 
 pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='sm:p-6 sm:!mb-10 !pb-0 !pt-10 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
+            <Layout className='sm:p-0 sm:!mb-10 sm:m:0 sm:-mt-20 mb-20 !pb-0 !pt-10 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex flex-row lg:flex-col items-center">
                     <div className="w-1/2 lg:w-full p-6 lg:p-6">
                         <AnimatedText text="Crown Silo Bag Sizes"

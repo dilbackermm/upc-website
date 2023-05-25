@@ -27,9 +27,9 @@ const Points = ({ point }) => {
 
 const SilobagAdvantages = ({ className = "" }) => {
     return (
-        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
+        <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-auto 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='sm:!-mb-20 !pb-0 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
+            <Layout className='sm:!-mb-20 !pb-10 sm:!pt-0 !pt-28 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex flex-row-reverse lg:flex-col items-center">
                     <div className="w-1/2 lg:w-full p-6 lg:p-6">
                         <AnimatedText text="Advantages of crown silo Bags"
