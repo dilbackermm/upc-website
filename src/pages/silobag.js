@@ -11,6 +11,8 @@ import SilobagMain from '@/components/SilobagMain'
 import SilobagApplications from '@/components/SilobagApplications'
 import SilobagAdvantages from '@/components/SilobagAdvantages'
 import SilobagMounting from '@/components/SilobagMounting'
+import SilobagSpecification from '@/components/SilobagSpecification'
+import SilobagSizes from '@/components/SilobagSizes'
 
 {/* bg-gradient-to-r from-[#F3E8D6] to-[#DBC4AC] */ }
 
@@ -57,7 +59,10 @@ const silobag = () => {
       <SilobagMain />
       <SilobagApplications />
       <SilobagAdvantages />
+      <SilobagSpecification />
+      <SilobagSizes />
       <SilobagMounting />
+      {/* <SilobagEnding /> */}
     </>
   )
 }

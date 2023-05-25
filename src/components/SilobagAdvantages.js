@@ -6,59 +6,47 @@ import { TitleText, TypingText } from './CustomTexts';
 import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
 import tick from '../../public/images/svgs/tick.svg'
 import AnimatedText from './AnimatedText'
+import rarrow from '../../public/images/svgs/rightarrow.svg'
 
+const Points = ({ point }) => {
+    return (
+        <motion.li
+            initial={{ y: 200 }}
+            whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.1, originX: 0 }}
+            transition={{ type: 'tween', }}
+            className="flex items-center "
+        >
 
-const SilobagApplications = ({ className = "" }) => {
+            <Image src={rarrow} alt="check_icon" className='mx-2 sm:mx-0 p-0.5 w-6' />
+            <h2 className='py-3 pl-3 text-lg sm:text-base text-dark/75 font-medium'>{point}</h2>
+        </motion.li>
+    )
+}
+
+const SilobagAdvantages = ({ className = "" }) => {
     return (
         <main className={` flex pt-0 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='!pb-0 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6 '>
-                {/* <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' /> */}
-                <div className="flex lg:flex-col-reverse items-center">
-                    <div className="mr-20 sm:mr-0 w-1/2 sm:py-10 lg:w-full py-0">
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
-                            Retains original quality and quantity of the products
-                        </motion.p>
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
-                            Ideal for long term storage
-                        </motion.p>
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
-                            Perfect sealing and anaerobic conditions expel insects and fungus  growth within the bag.
-                        </motion.p>
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
-                            Protects the goods from adverse climatic conditions during transit.
-                        </motion.p>
-                        <motion.p
-                            initial={{ y: 200, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
-                            Lower investment costs and lower total annual costs.
-                        </motion.p>
+            <Layout className='sm:!-mb-20 !pb-0 !pt-0 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
+                <div className="flex flex-row-reverse lg:flex-col items-center">
+                    <div className="w-1/2 lg:w-full p-6 lg:p-6">
+                        <AnimatedText text="Advantages of crown silo Bags"
+                            className='text-left text-primaryDark' />
                     </div>
-                    <div className="w-1/2 lg:w-full">
-                        <TitleText textStyles={"text-left sm:!text-4xl !text-7xl text-primaryDark"}
-                            title={<>Advantages of crown silo Bags</>} />
+                    <div className="w-1/2 lg:w-full ">
+                        <ul>
+                            <Points point="Retains original quality and quantity of the products" />
+                            <Points point="Ideal for long term storage" />
+                            <Points point="Perfect sealing and anaerobic conditions expel insects and fungus  growth within the bag." />
+                            <Points point="Protects the goods from adverse climatic conditions during transit." />
+                            <Points point="Lower investment costs and lower total annual costs." />
+                        </ul>
                     </div>
                 </div>
             </Layout>
         </main>
     )
 }
-export default SilobagApplications
+export default SilobagAdvantages

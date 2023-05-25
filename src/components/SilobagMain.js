@@ -22,14 +22,14 @@ const SilobagMain = ({ className = "" }) => {
                             initial={{ y: 200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
+                            className='font-normal py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
                             The diameter of 8-10 feet and Length of 60 m, 75 m up to 90 m can be produced. Every Bag is folded with an automatic folding machine.
                         </motion.p>
                         <motion.p
                             initial={{ y: 200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='font-medium py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
+                            className='font-normal py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
                             The outer layer is white with UV protective  coating while the inner layer in contact with the grain is black.
                         </motion.p>
                     </div>

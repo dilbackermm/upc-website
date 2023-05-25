@@ -12,15 +12,15 @@ import AnimatedText from '@/components/AnimatedText'
 
 
 const FlexitankCapacity = ({ className = "" }) => {
-    return (
-        <main className={`flex pt-9 bg-primarylight text-dark w-full min-h-screen 
+  return (
+    <main className={`flex pt-9 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus' >
-            <Layout className='!pt-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
-            <div className="">
-                    <AnimatedText text="Recommended Flexitank Capacity by Liquid Type" className='!text-left text-primaryDark !text-6xl' />
-            </div>
+      <Layout className='!pt-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
+        <div className="">
+          <AnimatedText text="Recommended Flexitank Capacity by Liquid Type" className='!text-left text-primaryDark !text-6xl' />
+        </div>
 
-            <motion.div
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
@@ -86,9 +86,9 @@ const FlexitankCapacity = ({ className = "" }) => {
             </table>
           </motion.div>
         </motion.div>
-            </Layout>
-        </main>
-    )
+      </Layout>
+    </main>
+  )
 }
 
 export default FlexitankCapacity
