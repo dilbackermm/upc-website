@@ -15,7 +15,7 @@ const DunnageContent = ({ className = "" }) => {
                     </div>
                     <div className="w-8/12 lg:w-full lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0 lg:pt-3">
                         <motion.p
-                            initial={{ x: 200 }}
+                            initial={{ x: -200 }}
                             whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
@@ -25,7 +25,7 @@ const DunnageContent = ({ className = "" }) => {
 
                         </motion.p>
                         <motion.p
-                            initial={{ x: 200 }}
+                            initial={{ x: -200 }}
                             whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>

@@ -37,7 +37,7 @@ const Items = ({ img }) => {
             transition={{ type: 'tween', staggerChildren: 1 }}
             className=""
         >
-         <Image src={img} className='w-80 2xl:w-72 xl:w-60 lg:w-48 sm:w-42 m-6 lg:m-3 sm:m-1 mx-6 sm:mx-auto sm:my-3 rounded-xl border border-primaryDark/25 shadow-md' />
+         <Image src={img} className='w-80 2xl:w-72 xl:w-60 lg:w-48 sm:w-42 m-6 lg:m-3 sm:m-1 mx-6 xs:mx-auto sm:my-3 rounded-xl border border-primaryDark/25 shadow-md' />
   
         </motion.div>
     )
@@ -58,7 +58,7 @@ export default function Home() {
       bg-light/50  pb-0 mb-0 lg:items-start ">
                 <Layout className=' pt-0 pb-0  bg-transparent '>
                     <AnimatedText text="Accessories" className='text-center ' />
-                    <div className="flex items-center flex-wrap justify-start py-16 sm:justify-center">
+                    <div className="flex items-center flex-wrap  py-16 justify-center">
                       <Items img={Accessory1} />
                       <Items img={Accessory2} />
                       <Items img={Accessory3} />

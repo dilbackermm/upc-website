@@ -10,7 +10,7 @@ import AnimatedText from './AnimatedText'
 const Points = ({ point }) => {
     return (
         <motion.li
-            initial={{ x: 200, opacity:0 }}
+            initial={{ x: -200, opacity:0 }}
             whileInView={{ x: 0, opacity:1, transition: { duration: 1, ease: "easeInOut" } }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.02, originX: 0 }}
@@ -35,22 +35,14 @@ const BarrierContent = ({ className = "" }) => {
                         <Image src={barrierliner1} alt='barrier liner image' className='p-6 xl:p-4  ' />
                     </div>
                     <div className="w-1/2 ml-24 2xl:ml-20 xl:ml-16  lg:w-full lg:m-0">
-                        <motion.p
-                            initial={{ x: 200 }}
-                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='p-2  text-xl  text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+                        <p className='p-2  text-xl  text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             Goods in containers need protection. Especially when we consider the long haul ahead.
                             They need to be protected against corrosion and damage during transit. This is why
                             barrier liners play an important role here.
-                        </motion.p>
-                        <motion.p
-                            initial={{ x: 200 }}
-                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className='p-2  text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+                        </p>
+                        <p className='p-2  text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             At UPC we understand the need for the goods to reach their destination intact.
-                        </motion.p>
+                        </p>
                     </div>
                 </div>
                 <div className="py-6 flex flex-col items-center justify-center">

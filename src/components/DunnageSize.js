@@ -16,7 +16,7 @@ const DunnageSize = ({ className = "" }) => {
                 <div className="flex items-center lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-3">
                         <motion.p
-                            initial={{ y: 200, opacity: 0 }}
+                            initial={{ y: -200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 xl:leading-8 text-left'>With the right selection, you can rest assured that your goods
@@ -24,7 +24,7 @@ const DunnageSize = ({ className = "" }) => {
                             economies, weight, quantity, and mode of transportation.
                         </motion.p>
                         <motion.p
-                            initial={{ y: 200, opacity: 0 }}
+                            initial={{ y: -200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>Dunnage bags are available in all shapes and sizes

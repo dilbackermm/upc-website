@@ -78,11 +78,11 @@ const Navbar = ({ className = "" }) => {
             <button className=' fixed lg:right-9 right-12 flex-col justify-center items-center shadow
             flex z-50 bg-primaryDark px-4 py-5  rounded-full' onClick={handleClick} >
                 <span className={`bg-light display-block h-[3px] w-7 lg:h-0.5 lg:w-6 rounded-sm transition-all duration-300 ease-out 
-                ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'} `} ></span>
+                ${isOpen ? 'rotate-45 translate-y-[6.5px] lg:translate-y-1' : '-translate-y-0.5'} `} ></span>
                 <span className={`bg-light display-block h-[3px] w-7 lg:h-0.5 lg:w-6 rounded-sm transition-all duration-300 ease-out my-1 lg:my-0.5
     ${isOpen ? 'opacity-0' : 'opacity-100'}`} ></span>
                 <span className={`bg-light display-block h-[3px] w-7 lg:h-0.5 lg:w-6 rounded-sm transition-all duration-300 ease-out 
-                ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'} `} ></span>
+                ${isOpen ? '-rotate-45 -translate-y-[6.5px] lg:-translate-y-1' : 'translate-y-0.5 '} `} ></span>
             </button>
 
 

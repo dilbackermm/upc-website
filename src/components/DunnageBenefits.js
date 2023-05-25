@@ -17,7 +17,7 @@ import worldclass4 from '../../public/images/dunnageBag/worldclass4.png'
 const Benefits = ({ benefit }) => {
     return (
         <motion.li
-            initial={{ x: 200 }}
+            initial={{ x: -200 }}
             whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.1, originX: 0 }}
@@ -39,7 +39,7 @@ const DunnageBenefits = ({ className = "" }) => {
                 <AnimatedText text="Benefits of UPC Dunnage Bags " className='!pt-6 pb-14' />
                 <Image src={dunnage} className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-20 -translate-y-16
                 2xl:translate-y-5
-                lg:relative lg:right-auto lg:m-auto lg:pt-6' />
+                lg:relative lg:z-10 lg:right-auto lg:m-auto lg:pt-6' />
                 <div className='py-12 lg:py-6'>
 
                     <ul className='mt-12 lg:mt-1 tex-left border-t border-y-primaryDark'>
@@ -61,7 +61,7 @@ const DunnageBenefits = ({ className = "" }) => {
                         absorb shock. Here are the three main benefits of using dunnage:</p>
                     <div className='flex flex-col items-center justify-between lg:pt-4'>
                         <motion.div
-                        initial={{ x: 200 }}
+                        initial={{ x: -200 }}
                         whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
                         className='flex flex-col  w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
@@ -75,7 +75,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             </p>
                         </motion.div>
                         <motion.div
-                        initial={{ x: 200 }}
+                        initial={{ x: -200 }}
                         whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
                         className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 px-6 py-2 xl:py-1 xl:px-4 '>
@@ -89,7 +89,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             </p>
                         </motion.div>
                         <motion.div
-                        initial={{ x: 200 }}
+                        initial={{ x: -200 }}
                         whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                         viewport={{ once: true }}
                         className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
