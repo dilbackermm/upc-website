@@ -11,7 +11,7 @@ const DunnageSize = ({ className = "" }) => {
     return (
         <main className={` flex pt-3 bg-primarylight text-dark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='contactus ' >
-            <Layout className='pt-0 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
+            <Layout className='!pt-0 !pb-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' />
                 <div className="flex lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-3">
