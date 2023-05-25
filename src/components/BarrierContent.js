@@ -10,10 +10,10 @@ import AnimatedText from './AnimatedText'
 const Points = ({ point }) => {
     return (
         <motion.li
-            initial={{ y: 200 }}
-            whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+            initial={{ x: 200, opacity:0 }}
+            whileInView={{ x: 0, opacity:1, transition: { duration: 1, ease: "easeInOut" } }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.1, originX: 0 }}
+            whileHover={{ scale: 1.02, originX: 0 }}
             transition={{ type: 'tween', }}
             className="flex items-center "
         >
@@ -32,12 +32,12 @@ const BarrierContent = ({ className = "" }) => {
             <Layout className='!pt-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex lg:flex-col items-center justify-center">
                     <div className="w-1/2 lg:w-full">
-                        <Image src={barrierliner1} className='p-6 xl:p-4  ' />
+                        <Image src={barrierliner1} alt='barrier liner image' className='p-6 xl:p-4  ' />
                     </div>
                     <div className="w-1/2 ml-24 2xl:ml-20 xl:ml-16  lg:w-full lg:m-0">
                         <motion.p
-                            initial={{ y: 200 }}
-                            whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+                            initial={{ x: 200 }}
+                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2  text-xl  text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             Goods in containers need protection. Especially when we consider the long haul ahead.
@@ -45,8 +45,8 @@ const BarrierContent = ({ className = "" }) => {
                             barrier liners play an important role here.
                         </motion.p>
                         <motion.p
-                            initial={{ y: 200 }}
-                            whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+                            initial={{ x: 200 }}
+                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2  text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
                             At UPC we understand the need for the goods to reach their destination intact.
@@ -63,8 +63,8 @@ const BarrierContent = ({ className = "" }) => {
                         <div className="w-full">
 
                             <motion.div
-                                initial={{ y: 300, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
+                                initial={{ x: -300, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                                 viewport={{ once: true }}
                                 className="mt-6 p-5 border-y  border-y-primaryDark 
                                     ">
@@ -74,8 +74,8 @@ const BarrierContent = ({ className = "" }) => {
                                     liners ensure your goods stay safe regardless of changes in the environment.</p>
                             </motion.div>
                             <motion.div
-                                initial={{ y: 300, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
+                                initial={{ x: -300, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                                 viewport={{ once: true }}
                                 className="mt-3 p-5 ">
                                 <h2 className="text-3xl font-bold text-primaryDark">Storage</h2>
@@ -86,8 +86,8 @@ const BarrierContent = ({ className = "" }) => {
                                 their original condition.</p>
                             </motion.div>
                             <motion.div
-                                initial={{ y: 300, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
+                                initial={{ x: -300, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                                 viewport={{ once: true }}
                                 className="mt-3 p-5   border-y  border-y-primaryDark ">
                                 <h2 className="text-3xl font-bold text-primaryDark">Protection</h2>
@@ -104,11 +104,11 @@ const BarrierContent = ({ className = "" }) => {
                 </div>
 
                 <div className="flex lg:flex-col items-center">
-                    <div className="w-1/2 lg:w-full p-12 lg:p-6">
+                    <div className="w-1/2 lg:w-full p-9 lg:p-6">
                         <AnimatedText text="Why are barrier liners mandatory"
                             className='text-left text-primaryDark' />
                     </div>
-                    <div className="w-1/2 lg:w-full ">
+                    <div className="w-1/2 lg:w-full ps-6 lg:ps-1 ">
                         <ul>
                             <Points point="Ideal for protecting all kinds of products" />
                             <Points point="Acts as a shield during unpredictable climatic conditions" />

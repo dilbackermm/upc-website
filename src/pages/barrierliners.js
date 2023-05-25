@@ -24,7 +24,7 @@ const barrierliners = () => {
 
       </Head>
 
-      <Image src={barrierliner2} alt="dunnage"
+      <Image src={barrierliner2} alt="barrier liner image"
         className='  -z-10 absolute w-full min-h-screen mb-0 object-cover'   
       />
 
@@ -35,7 +35,7 @@ const barrierliners = () => {
           <div className='flex flex-col lg:items-center text-dark'>
             <div className='w-3/5 2xl:w-full lg:w-full'>
               <AnimatedText text="crown Barrier liners"
-                className='   pt-36 2xl:pt-24 xl:pt-20 lg:pt-16 sm:pt-6 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
+                className='   pt-36 2xl:pt-6 xl:pt-3 lg:pt-16 sm:pt-6 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
               <p className='pt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base  '>
                 Barrier liners are specifically used for the protection of goods. Therefore it is 
                 important that the right choice of barrier liners be made to protect products that
