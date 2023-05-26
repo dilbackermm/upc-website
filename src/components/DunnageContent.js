@@ -29,47 +29,47 @@ const DunnageContent = ({ className = "" }) => {
                             whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
-                           Dunnage bags, also known as airbags, and inflatable bags, are used to secure and 
-                           stabilize cargo. Introduced around 1970, dunnage bags provide convenient and 
-                           cost-effective cargo stabilization in ISO sea containers, closed railcars, 
-                           trucks, and oceangoing vessels.
+                            Dunnage bags, also known as airbags, and inflatable bags, are used to secure and
+                            stabilize cargo. Introduced around 1970, dunnage bags provide convenient and
+                            cost-effective cargo stabilization in ISO sea containers, closed railcars,
+                            trucks, and oceangoing vessels.
                         </motion.p>
-                        
+
                     </div>
                 </div>
                 <div className="flex items-center lg:flex-col">
-                            <div className="py-9 mx-2 flex flex-col w-1/2 lg:w-full">
-                                <motion.div
-                                    initial={{  opacity:0 }}
-                                    whileInView={{opacity:1, transition: { duration: 0.9 } }}
-                                    viewport={{ once: true }}
-                                    className="p-5 pt-6 border rounded-lg bg-light border-primaryDark 
+                    <div className="py-9 mx-2 flex flex-col w-1/2 lg:w-full">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, transition: { duration: 0.9 } }}
+                            viewport={{ once: true }}
+                            className="p-5 pt-6 border rounded-lg bg-light border-primaryDark 
                                     sm:border-none sm:p-1 sm:bg-primarylight">
-                                    <h2 className="text-3xl font-bold text-primaryDark">Why dunnage bags?</h2>
-                                    <p className='text-lg py-3 pt-6 leading-8  xs:text-base '>Dunnage Air Bags are best used to control the movement of cargo
-                                        loads in railcars, trucks, or overseas containers. They manage
-                                        the movement of cargo by bracing loads, filling voids, protecting
-                                        cargo from in-transit damage, and absorbing vibrations.</p>
-                                </motion.div>
+                            <h2 className="text-3xl font-bold text-primaryDark">Why dunnage bags?</h2>
+                            <p className='text-lg py-3 pt-6 leading-8  xs:text-base '>Dunnage Air Bags are best used to control the movement of cargo
+                                loads in railcars, trucks, or overseas containers. They manage
+                                the movement of cargo by bracing loads, filling voids, protecting
+                                cargo from in-transit damage, and absorbing vibrations.</p>
+                        </motion.div>
 
-                            </div>
-                            <div
-                               
-                                className="mr-6 ml-4 flex flex-col w-1/2 lg:w-full">
-                                <motion.div 
-                                 initial={{opacity:0  }}
-                                 whileInView={{opacity:1, transition: { duration: 0.9 } }}
-                                 viewport={{ once: true }}
-                                className="p-5 pt-6 border rounded-lg bg-light border-primaryDark 
+                    </div>
+                    <div
+
+                        className="mr-6 ml-4 flex flex-col w-1/2 lg:w-full">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, transition: { duration: 0.9 } }}
+                            viewport={{ once: true }}
+                            className="p-5 pt-6 border rounded-lg bg-light border-primaryDark 
                                      sm:border-none sm:p-1 sm:bg-primarylight">
-                                    <h2 className="text-3xl font-bold text-primaryDark">Who uses dunnage?</h2>
-                                    <p className='text-lg py-3  pt-6 leading-8  xs:text-base '>Dunnage Air Bags are best used to control the movement of cargo
-                                        loads in railcars, trucks, or overseas containers. They manage
-                                        the movement of cargo by bracing loads, filling voids, protecting
-                                        cargo from in-transit damage, and absorbing vibrations.</p>
-                                </motion.div>
-                            </div>
-                        </div>
+                            <h2 className="text-3xl font-bold text-primaryDark">Who uses dunnage?</h2>
+                            <p className='text-lg py-3  pt-6 leading-8  xs:text-base '>Dunnage Air Bags are best used to control the movement of cargo
+                                loads in railcars, trucks, or overseas containers. They manage
+                                the movement of cargo by bracing loads, filling voids, protecting
+                                cargo from in-transit damage, and absorbing vibrations.</p>
+                        </motion.div>
+                    </div>
+                </div>
             </Layout>
         </main>
     )

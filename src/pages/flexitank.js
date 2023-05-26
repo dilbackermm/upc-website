@@ -8,7 +8,7 @@ import Image from 'next/image'
 import AnimatedText from '@/components/AnimatedText'
 
 import FlexitankUses from '@/components/FlexitankUses'
-import FlexitankCarry from '@/components/FlexitankCarry'
+
 import FlexitankAdvantages from '@/components/FlexitankAdvantages'
 import FlexitankCapacity from '@/components/FlexitankCapacity'
 import FlexitankMisconception from '@/components/FlexitankMisconception'
@@ -57,7 +57,6 @@ const flexitank = () => {
       </main>
 
       <FlexitankUses />
-      <FlexitankCarry />
       <FlexitankAdvantages />
       <FlexitankCapacity />
       <FlexitankMisconception />

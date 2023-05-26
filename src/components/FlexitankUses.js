@@ -3,11 +3,11 @@ import Layout from './Layout'
 import { motion } from 'framer-motion'
 import AnimatedText from './AnimatedText'
 import Image from 'next/image'
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import styles from '../styles/index'
-import { TitleText, TypingText } from '../components/CustomTexts';
-import { uses } from '../constants';
-import StartSteps from '../components/StartSteps';
+
+import store1 from '../../public/images/flexitanks/store1.png'
+import store2 from '../../public/images/flexitanks/store2.png'
+import store3 from '../../public/images/flexitanks/store3.png'
+import store4 from '../../public/images/flexitanks/store4.png'
 
 
 const Uses = ({ use, content }) => {
@@ -25,6 +25,22 @@ const Uses = ({ use, content }) => {
 }
 
 
+const Items = ({ img, item }) => {
+  return (
+    <div
+    className="flex flex-col items-center "
+    >
+      <Image src={img} alt="check_icon"
+       className='mx-6 xl:mx-3 p-6 2xl:p-5 xl:p-4 
+        bg-light rounded-lg border border-primaryDark 
+        xl:w-36 w-60 2xl:w-44 sm:w-32 xs:w-28' />
+      <h2 className='py-3 text-center text-xl  
+      xl:text-lg sm:text-base xs:text-sm text-dark/75 font-medium'>
+        {item}
+        </h2>
+    </div>
+  )
+}
 
 const FlexitankUses = ({ className = "" }) => {
   return (
@@ -91,6 +107,25 @@ const FlexitankUses = ({ className = "" }) => {
             </ul>
           </div>
         </div>
+        <div className="flex lg:flex-col-reverse items-satrt">
+         
+         <div className=" flex  w-1/2 lg:w-full ps-6 lg:ps-1 ">
+           <div className="flex flex-col lg:flex-row md:flex-col">
+             <div className="py-4 xl:py-2 flex flex-row">
+             <Items item="Food-grade liquids" img={store1}  />
+             <Items item="Chemicals" img={store2}  />
+             </div>
+             <div className="py-4 xl:py-2 flex flex-row">
+             <Items item="Water" img={store3}  />
+             <Items item="Oil" img={store4}  /> 
+             </div>
+             </div>
+         </div>
+         <div className="w-1/2 lg:w-full p-9 lg:p-6">
+           <AnimatedText text="What can you carry in a Flexitank"
+             className='text-center text-primaryDark' />
+         </div>
+       </div>
 
       </Layout>
     </main>
