@@ -9,9 +9,9 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // setSubmitting(true);
+        setSubmitting(true);
 
-        var data = {
+        const inputfields = {
             name: e.target.name.value,
             email: e.target.email.value,
             phone: e.target.phone.value,
@@ -20,7 +20,7 @@ const Form = () => {
             site: 'UPC',
         };
 
-        emailjs.sendForm('service_nlwmmsz', 'template_qpuqbz8', data, 'X3kfhXretl4Bh1NBk')
+        emailjs.sendForm('service_nlwmmsz', 'template_qpuqbz8', e.target, 'X3kfhXretl4Bh1NBk')
             .then(() => {
                 swal('Submitted!', 'Your application reached us, soon our team will get back to you', 'success')
                     .then(() => {
@@ -45,7 +45,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="name" type="text" name="name" />
+                        id="name" type="text" name='name' />
                 </div>
                 <div class="w-1/2 xs:w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-dark/75 text-sm font-bold" for="grid-first-name">
@@ -53,7 +53,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="company" type="text" name="company" />
+                        id="company" type="text" name='company' />
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -63,7 +63,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="e-mail" type="email" name="email" />
+                        id="e-mail" type="email" name='email' />
                 </div>
                 <div class="w-1/2 xs:w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-dark/75 text-sm font-bold" for="grid-first-name">
@@ -71,7 +71,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="phone" type="tel" name="phone" />
+                        id="phone" type="tel" name='phone' />
                 </div>
             </div>
 
@@ -81,7 +81,7 @@ const Form = () => {
                 </label>
                 <textarea class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                    rows="3" id="message" type="text" name="message" />
+                    rows="3" id="note" type="text" name='message' />
             </div>
             <div class="mt-9 flex items-center justify-end ">
 
