@@ -88,8 +88,76 @@ const FlexitankAdvantages = ({ className = "" }) => {
           " />
           </div>
         </div>
-
-
+        <h1 className='pt-12 lg:pt-6 text-center text-5xl lg:text-4xl font-bold xs:text-3xl'>
+          Recommended Flexitank Capacity by Liquid Type</h1>
+          <div className='py-12 lg:py-6 sm:py-3 flex items-center lg:flex-col'>
+          <div className="w-1/2 lg:w-full">
+          <p className='p-2  text-xl text-dark font-normal 
+            leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] 
+            text-left sm:text-lg xs:text-base'>
+              The most widely available flexitank containers come between 10,000 liters 
+              and 24,000 liters. Flexitank models are available in 16,000L, 18,000L, 
+              20,000L, 22,000L, and 24,000L.Some companies also offer a range of 1,000L 
+              up to 100,000L — depending on the customer’s requirements
+            </p>
+          <p className='p-2  text-xl text-dark font-semibold 
+            leading-[2.35rem] xl:leading-[2.1rem] sm:leading-[2rem] 
+            text-left sm:text-lg xs:text-base'>
+              Here’s a reference table for various types of liquids and corresponding flexitank capacity:
+            </p>
+          </div>
+<div className="w-1/2 lg:w-full lg:pt-3 pb-6">
+<table class="w-full p-5 sm:p-3 xs:p-2 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
+                        <thead className='uppercase text-primaryDark sm:text-sm'>
+                             <tr className='border-b border-b-dark/75'>
+                                <th class="px-6 py-4 md:px-4 md:py-2 sm:ps-2">Type of product</th>
+                                <th class="px-6 py-4 md:px-4 md:py-2 sm:ps-2">Density (kg/m)</th>
+                                <th class="px-6 py-4 md:px-4 md:py-2 sm:ps-2">Recommended size </th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody className='text-dark/75 font-medium sm:text-sm'>
+                             <tr className='border-b border-b-dark/25'>
+                                <td className='py-2 lg:py-1'>Latex</td>
+                                <td className='py-2 lg:py-1'>60 - 95</td>
+                                <td className='py-2 lg:py-1'>19,000 L</td>
+                               
+                            </tr>
+                             <tr className='border-b border-b-dark/25'>
+                                <td className='py-2 lg:py-1'>Polyol</td>
+                                <td className='py-2 lg:py-1'>1,100</td>
+                                <td className='py-2 lg:py-1'>19,000 L</td>
+                               
+                            </tr>
+                             <tr className='border-b border-b-dark/25'>
+                                <td className='py-2 lg:py-1'>Glycerin</td>
+                                <td className='py-2 lg:py-1'>1,260</td>
+                                <td className='py-2 lg:py-1'>20,000 L</td>
+                                
+                            </tr>
+                             <tr className='border-b border-b-dark/25'>
+                                <td className='py-2 lg:py-1'>Palm oil</td>
+                                <td className='py-2 lg:py-1'>887.5</td>
+                                <td className='py-2 lg:py-1'>21,000 L</td>
+                             
+                            </tr>
+                             <tr className='border-b border-b-dark/25'>
+                                <td className='py-2 lg:py-1'>Olive oil</td>
+                                <td className='py-2 lg:py-1'>905</td>
+                                <td className='py-2 lg:py-1'>22,000 L</td>
+                             
+                            </tr>
+                             <tr className=''>
+                                <td className='py-2 lg:py-1'>Wine</td>
+                                <td className='py-2 lg:py-1'>285.7</td>
+                                <td className='py-2 lg:py-1'>24,000 L</td>
+                              
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+</div>
+          </div>
       </Layout>
     </main>
   )

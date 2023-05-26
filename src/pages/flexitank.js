@@ -10,7 +10,7 @@ import AnimatedText from '@/components/AnimatedText'
 import FlexitankUses from '@/components/FlexitankUses'
 
 import FlexitankAdvantages from '@/components/FlexitankAdvantages'
-import FlexitankCapacity from '@/components/FlexitankCapacity'
+
 import FlexitankMisconception from '@/components/FlexitankMisconception'
 import FlexitankxChange from '@/components/FlexitankxChange'
 
@@ -58,7 +58,6 @@ const flexitank = () => {
 
       <FlexitankUses />
       <FlexitankAdvantages />
-      <FlexitankCapacity />
       <FlexitankMisconception />
       <FlexitankxChange />
 
