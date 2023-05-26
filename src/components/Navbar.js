@@ -97,7 +97,7 @@ const Navbar = ({ className = "" }) => {
                         className=' min-w-[80vw] lg:min-w-full min-h-[80vh] lg:min-h-full flex flex-col justify-between z-40 
         itmes-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y1/2
         bg-primaryDark/90 rounded-2xl lg:rounded-none py-32 backdrop-blur-xl' >
-                        <nav className='flex justify-around lg:flex-col items-start'>
+                        <nav className='flex justify-around lg:flex-col items-start lg:items-center'>
                         <div className='mx-12 lg:hidden flex items-start flex-col justif-center self-center'></div>
                             <div className='mx-12 flex items-left flex-col justif-center text-left'>
                             <h2 className='pb-3 text-3xl text-left font-bold text-light'>Company</h2>

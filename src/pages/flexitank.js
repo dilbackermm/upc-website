@@ -67,35 +67,3 @@ const flexitank = () => {
 
 export default flexitank
 
-{/* <Image src={flexitankbanner} alt="flexitank"
-        className='-z-10 absolute w-full h-screen mb-0 object-cover'
-        priority
-        sizes="(max-width: 768px) 100vw,
-            (max-width: 1200px) 50vw,       
-            33vw"/>
-
-      <main className="flex flex-col  text-dark  w-full min-h-screen h-screen
-   bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
-        <Navbar className='bg-transparent' />
-        <Layout className=' pt-0 pb-0 items-center bg-transparent '>
-          <div className='flex flex-row lg:items-center  text-dark'>
-            <div className='w-3/5 xl:w-4/5 lg:w-full'>
-              <div className="my-32 lg:hidden"></div>
-              <AnimatedText text="Crown Flexitanks"
-                className='mt-20 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl sm:pt-6' />
-            </div>
-            <div className='flex flex-col ml-28 mt-20'>
-
-              <p className='my-6 mt-12 pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>The flexitanks commonly used by the industry can hold up to 24,000 liters of liquid cargo.
-                Flexitanks are used for the transportation of non-hazardous liquids.</p>
-              <p className='my-6  pr-24 sm:pr-0 text-2xl xl:text-xl md:text-lg sm:text-base font-light '>
-                To give a technical definition: "Hermetically sealed, collapsible, and flexible bag or
-                bladder, which is fitted into a twenty-foot Dry Van (DV) or standard conatainer."</p>
-            </div>
-
-          </div>
-          <div className="w-2/5 xl:w-1/5"></div>
-
-        </Layout>
-
-      </main> */ }
