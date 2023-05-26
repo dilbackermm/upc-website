@@ -3,6 +3,7 @@ import Layout from './Layout'
 import AnimatedText from './AnimatedText'
 import { LinkArrow, PdfIcon } from './icons'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 
 
@@ -28,15 +29,16 @@ const Welcome = ({ className = "" }) => {
               {/* <AnimatedText text={"to UPC "}
                 className='text-7xl  text-primaryDark font-bold text-left' /> */}
             </motion.div>
-            <motion.button
-              href="/dummy.pdf" target={"_blank"}
+            <Link
+              href="/dunnageBrochure.pdf" target={"_blank"}
+              download={true}
               whileHover={{ y: -5 }}
-              className=" flex items-center justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
-              <h6 className="p-12 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">View Brochure</h6>
+              className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
+              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">View Brochure</h6>
               <span className='p-8'>
                 <PdfIcon className={"ml-1 mr-6"} />
               </span>
-            </motion.button>
+            </Link>
           </div>
         
 <motion.div>

@@ -12,6 +12,7 @@ import { motion } from 'framer-motion'
 import AboutUs from '@/components/AboutUs'
 import ContactUs from '@/components/ContactUs'
 import Navbar from '@/components/Navbar'
+import arrow from '../../public/images/svgs/lrarrow.svg'
 
 
 
@@ -50,14 +51,14 @@ export default function Home() {
               <p className='my-6 2xl:my-5 text-2xl 2xl:text-xl xl:text-lg md:text-lg sm:text-base font-light '>high-quality, reliable and 
               cost-effective dunnage air bags to protect your cargo from damage during transit.</p>
               <div className='flex items-center self-start mt-2 lg:self-center '>
-                <Link href="/dummy.pdf" target={"_blank"}
+                <Link href="/dunnagebag" target={"_blank"}
                   className="flex items-center bg-primaryDark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
-                  hover:bg-light hover:text-primaryDark border-2 border-solid border-transparent hover:border-primaryDark
+                 hover:bg-primaryDark/90 border-solid border-transparent hover:shadow-lg
                  
                   md:p-2 md:px-4 md:text-base"
-                  download={true}
+                 
                 >More
-                  <LinkArrow className={"w-6 ml-1"} />
+                  <Image src={arrow} className={"w-9 ml-3"} />
                 </Link>
                 
               </div>
@@ -85,3 +86,14 @@ export default function Home() {
     </>
   )
 }
+
+
+{/* <Link href="/dummy.pdf" target={"_blank"}
+                  className="flex items-center bg-primaryDark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
+                  hover:bg-light hover:text-primaryDark border-2 border-solid border-transparent hover:border-primaryDark
+                 
+                  md:p-2 md:px-4 md:text-base"
+                  download={true}
+                >More
+                  <LinkArrow className={"w-6 ml-1"} />
+                </Link> */}
