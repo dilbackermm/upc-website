@@ -7,7 +7,7 @@ import Image from 'next/image'
 const DunnageContent = ({ className = "" }) => {
     return (
         <main className={` flex pt-9 bg-primarylight text-dark w-full min-h-screen 
-    pb-0 mb-0 ${className} `} id='contactus ' >
+    pb-0 mb-0 ${className} `} >
             <Layout className='!py-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6'>
                 <div className="flex items-center lg:flex-col ">
                     <div className="w-4/12 lg:w-full lg:flex-col">

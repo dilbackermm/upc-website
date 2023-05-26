@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
 import { motion } from 'framer-motion'
+import AnimatedText from './AnimatedText'
 import Image from 'next/image'
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import styles from '../styles/index'
@@ -9,49 +10,129 @@ import { uses } from '../constants';
 import StartSteps from '../components/StartSteps';
 
 
+const Uses = ({ use, content }) => {
+  return (
+      <motion.li
+          initial={{opacity:0 }}
+          whileInView={{ opacity:1 }}
+          viewport={{ once: true }}
+          className="flex flex-col pl-9 lg:pl-1 2xl:pl-7 xl:pl-6 py-3 lg:py-2 sm:py-1 items-start  "
+      >
+          <h2 className='py-3 lg:py-2 sm:py-1 pl-3 lg:pl-1 text-3xl xl:text-2xl sm:text-xl xs:text-lg text-primaryDark font-semibold'>{use}</h2>
+          <p className='pt-2 lg:pt-1 pb-3 pl-3 lg:pl-1 text-lg xl:text-base lg:text-lg sm:text-base xs:text-sm text-dark'>{content}</p>
+      </motion.li>
+  )
+}
+
+
+
 const FlexitankUses = ({ className = "" }) => {
   return (
     <main className={` flex pt-9 bg-primarylight text-dark w-full min-h-screen 
-    pb-0 mb-0 ${className} `} id='contactus ' >
-      <Layout className='!pt-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: 'false', amount: 0.25 }}
-          className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
-        >
-          <motion.div
-            // variants={planetVariants('left')}
-            className={'flex-1 flex-col ${styles.flexCenter}'}
-          >
-            <TitleText textStyles={"!text-center text-dark !text-6xl"} title={<>Uses for a Flexitank</>} />
+    pb-0 mb-0 ${className} `}  >
+      <Layout className='!py-6 bg-transparent  mx-32 2xl:mx-24 xl:16 xl:mx-12 lg:mx-6'>
+        <div className="flex items-start lg:flex-col ">
+          <div className="w-5/12 lg:w-full flex flex-col pr-5 xl:pr-0">
+            <AnimatedText text="Uses for a Flexitank"
+              className='text-left text-primaryDark' />
+            <motion.p
+              initial={{ x: -200 }}
+              whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+              viewport={{ once: true }}
+              className='py-5 pt-12 text-lg text-dark font-normal leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
+              Due to its high efficiency and exceptional contamination prevention,
+              flexitanks are used for non-hazardous chemical transportation.
+              But also for food-grade goods like edible oil, fruit concentrates,
+              drinks, among others.
+            </motion.p>
             <img
               src="../images/products/flexitank2.png"
               alt="flexitank"
-              className="w-[90%] object-contain -mt-[50px]"
+              className="w-[90%] object-contain"
             />
-            <p className='ml-20 mr-24 text-lg py-3 pt-6 leading-8 xs:text-base'>Due to its high efficiency and exceptional contamination prevention, flexitanks are
-              used for non-hazardous chemical transportation. But also for food-grade goods like
-              edible oil, fruit concentrates, drinks, among others.</p>
-          </motion.div>
-          <motion.div
-            variants={fadeIn('left', 'tween', 0.2, 1)}
-            className="flex-[1] flex justify-center flex-col">
-            {/* <TypingText title="| How Metaversus Works" /> */}
-            <div className="mt-[31px] flex flex-col max-w-[100%] mr-24 gap-[24px]">
-              {uses.map((feature, index) => (
-                <StartSteps
-                  key={`feature-${index}`}
-                  {...feature} index={index + 1}
-                />
-              ))}
-            </div>
-          </motion.div>
-        </motion.div>
+          </div>
+
+          <div className="w-7/12 lg:w-full lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0 lg:pt-3">
+            <ul>
+              <Uses
+              use="1. Fuel storage"
+              content="Liquid fuels including gasoline, diesel, and oil can be stored
+               and transported in flexitanks easily. they are primarily utilized 
+               for storage. Coupled with a protective lining and berm, 
+               to provide extra containment safety to the surrounding environment.
+              "
+              />
+              <Uses
+              use="2. Portable water storage"
+              content="Flexitanks occupy very little space and are easy to transport.
+               In case of emergencies or during disaster reliefs, they are also used to 
+               store and transport potable water
+              "
+              />
+              <Uses
+              use="3. Food-grade liquid storage"
+              content="Flexitanks enable the safe storage of food-grade 
+              liquid ingredients, such as milk, juices, wines, fructose 
+              syrup and others.
+              "
+              />
+              <Uses
+              use="4. Industrial chemical storage"
+              content="flexitanks are ideal for transporting and storing industrial 
+              liquid chemicals such as liquid detergents, lubricants, fertilizers, 
+              liquid latex, and paints, among others.
+              "
+              />
+              <Uses
+              use="5. Single-use & primary storage"
+              content="Flexitanks can decrease the overall storage costes
+               in cases where liquid storage is not for a long duration."
+              />
+            </ul>
+          </div>
+        </div>
+
       </Layout>
     </main>
   )
 }
 
 export default FlexitankUses
+
+
+
+// <motion.div
+// variants={staggerContainer}
+// initial="hidden"
+// whileInView="show"
+// viewport={{ once: 'false', amount: 0.25 }}
+// className={`${styles.innerwidth} mx-auto mt-10 flex lg:flex-row flex-row`}
+// >
+// <motion.div
+//   // variants={planetVariants('left')}
+//   className={'flex-1 flex-col ${styles.flexCenter}'}
+// >
+//   <TitleText textStyles={"!text-center text-dark !text-6xl"} title={<>Uses for a Flexitank</>} />
+//   <img
+//     src="../images/products/flexitank2.png"
+//     alt="flexitank"
+//     className="w-[90%] object-contain -mt-[50px]"
+//   />
+//   <p className='ml-20 mr-24 text-lg py-3 pt-6 leading-8 xs:text-base'>Due to its high efficiency and exceptional contamination prevention, flexitanks are
+//     used for non-hazardous chemical transportation. But also for food-grade goods like
+//     edible oil, fruit concentrates, drinks, among others.</p>
+// </motion.div>
+// <motion.div
+//   variants={fadeIn('left', 'tween', 0.2, 1)}
+//   className="flex-[1] flex justify-center flex-col">
+//   {/* <TypingText title="| How Metaversus Works" /> */}
+//   <div className="mt-[31px] flex flex-col max-w-[100%] mr-24 gap-[24px]">
+//     {uses.map((feature, index) => (
+//       <StartSteps
+//         key={`feature-${index}`}
+//         {...feature} index={index + 1}
+//       />
+//     ))}
+//   </div>
+// </motion.div>
+// </motion.div>

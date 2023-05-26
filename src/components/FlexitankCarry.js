@@ -15,7 +15,8 @@ const FlexitankCarry = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} id='contactus' >
       <Layout className='!pt-6 !pb-6 bg-transparent !z-10 mx-32 xl:mx-12 lg:mx-6'>
         <div className="">
-          <AnimatedText text="What can you carry in a Flexitank?" className='!text-left text-primaryDark !text-6xl' />
+        <AnimatedText text="What can you carry in a flexitank?"
+              className='text-left text-dark' />
           <div className='flex lg:flex-col items-center justify-between py-10'>
             <div className='flex flex-col  w-1/3 lg:w-full m-3 lg:m-2 xs:m-1 border border-primaryDark rounded-lg shadow-sm bg-secondaryLight/10 p-6'>                    <img
               src="../images/flexitanks/flexitank storage icons-01.png"
