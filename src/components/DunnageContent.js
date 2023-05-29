@@ -19,9 +19,8 @@ const DunnageContent = ({ className = "" }) => {
                             whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
                             className='p-2 text-xl text-dark font-normal leading-[2.35rem] xl:leading-[2rem] xl:text-lg sm:leading-[2rem] text-left sm:text-lg xs:text-base'>
-                            In short Dunnage bags holds the cargo in place within the containers while transporting.
-                            It can be padded in any manner based on the goods it protects. Like right from bubble
-                            wraps for smaller items to solid packaging for large items.
+                            Dunnage bags are poly bladders surrounded by ply’s of poly woven material with a valve that can inflate or deflate the bags. 
+Dunnage bags are essentially padded bags to secure the goods in place and protect them while transporting by air, sea, rail or road.
 
                         </motion.p>
                         <motion.p
