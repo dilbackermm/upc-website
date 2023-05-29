@@ -2,14 +2,12 @@ import React, { useRef } from 'react'
 import Layout from './Layout'
 import { motion, useScroll } from 'framer-motion'
 import LiIcon from './LiIcon'
-import Image from 'next/image'
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import { TitleText, TypingText } from './CustomTexts';
-import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
-import tick from '../../public/images/svgs/tick.svg'
+import Link from 'next/link'
+import { PdfIcon } from './icons'
 import AnimatedText from './AnimatedText'
-import { silomo } from '@/constants';
-import SiloMo from './SiloMo';
+import mountinPic1 from '../../public/images/silo/mountingPic1.png'
+import mountinPic2 from '../../public/images/silo/mountingPic2.png'
+import Image from 'next/image'
 
 
 const Instructions = ({ step, instruction }) => {
@@ -58,14 +56,16 @@ md:w-[2px] md:left-[30px] sm:-left-[10px] xs:-left-[21px]
                             step="step 1"
                             instruction="Take out the SILO bag from the box."
                         />
+                        <Image src={mountinPic1} className='ml-20 lg:ml-12 sm:ml-0' />
                         <Instructions
                             step="step 2"
                             instruction="Cut the blue cords taking care NOT TO CUT the white cords."
                         />
                         <Instructions
                             step="step 3"
-                            instruction="Open, unfold and lay it out flat"
+                            instruction="Open, unfold and lay it out flat as shown below"
                         />
+                          <Image src={mountinPic2} className='ml-20 lg:ml-12 sm:ml-0' />
                         <Instructions
                             step="step 4"
                             instruction="Place the bag right between the backstop and the tunnel, with the black folded edges 
@@ -127,7 +127,18 @@ md:w-[2px] md:left-[30px] sm:-left-[10px] xs:-left-[21px]
 
                     </ul>
                 </div>
-
+                <div className="flex items-center w-full justify-center">
+                <Link
+              href="/siloBrochure.pdf" target={"_blank"}
+              download={true}
+              whileHover={{ y: -5 }}
+              className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
+              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
+              <span className='p-8'>
+                <PdfIcon className={"ml-1 mr-6"} />
+              </span>
+            </Link>
+                </div>
             </Layout>
         </main>
     )

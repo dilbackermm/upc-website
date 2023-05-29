@@ -1,10 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { TitleText, TypingText } from './CustomTexts';
-import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
-import tick from '../../public/images/svgs/tick.svg'
+import { PdfIcon } from './icons'
+import Link from 'next/link'
 import AnimatedText from './AnimatedText'
 import rarrow from '../../public/images/svgs/rightarrow.svg'
 
@@ -111,6 +108,7 @@ const SilobagSpecification = ({ className = "" }) => {
                         <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal' > b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
                     </p>
                 </div>
+               
             </Layout>
         </main>
     )

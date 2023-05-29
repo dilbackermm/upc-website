@@ -15,6 +15,9 @@ const SilobagMain = ({ className = "" }) => {
                 <div className="flex items-center lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-6">
                         <Image src={siloPic} className="lg:m-auto" />
+                        <p className="font-light text-dark/50 text-sm sm:text-xs font lg:text-center  pt-2">
+                        Images used are for representative purpose only.
+                        </p>
                     </div>
                     <div className="ml-20 sm:ml-0 w-1/2 lg:w-full py-0">
                         <motion.p

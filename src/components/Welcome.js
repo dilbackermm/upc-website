@@ -34,7 +34,7 @@ const Welcome = ({ className = "" }) => {
               download={true}
               whileHover={{ y: -5 }}
               className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
-              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">View Brochure</h6>
+              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
               <span className='p-8'>
                 <PdfIcon className={"ml-1 mr-6"} />
               </span>

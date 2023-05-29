@@ -5,6 +5,8 @@ import Image from 'next/image'
 import img1 from '../../public/images/silo/img1.jpg'
 import img2 from '../../public/images/silo/img2.jpg'
 import AnimatedText from './AnimatedText'
+import { PdfIcon } from './icons'
+import Link from 'next/link'
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
 
@@ -88,14 +90,9 @@ pb-0 mb-0 ${className} `} id='contactus ' >
                         </motion.div>
                     </div>
                 </div>
-                {/* <div className="flex py-12 lg:hidden">
-                    <div className="mx-6 lg:my-2  sm:ml-0 w-1/2 h-auto lg:w-full p-6 lg:p-3 sm:p-2 rounded-lg shadow-sm bg-light border border-primaryDark/50">
-                        <Image src={img1} className=" object-fill" />
-                    </div>
-                    <div className="mx-6 lg:my-2 sm:ml-0 w-1/2 h-auto lg:w-full p-6 lg:p-3 sm:p-2 rounded-lg shadow-sm bg-light border border-primaryDark/50">
-                        <Image src={img2} className=" object-fill" />
-                    </div>
-                </div> */}
+                
+               
+                
              
               
             </Layout>

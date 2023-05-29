@@ -5,6 +5,8 @@ import Image from 'next/image'
 import flexi3 from '../../public/images/flexitanks/flexi3.jpg'
 import AnimatedText from '@/components/AnimatedText'
 import tick from '../../public/images/svgs/tick.svg'
+import Link from 'next/link'
+import { PdfIcon } from './icons'
 
 const Points = ({ point }) => {
   return (
@@ -49,6 +51,9 @@ const FlexitankMisconception = ({ className = "" }) => {
         <div className="my-9 xl:my-6 lg:my-3  py-3 flex lg:flex-col items-start ">
           <div className="w-1/2 lg:w-full">
             <Image src={flexi3} alt="flexitank picture" className='px-9 xl:px-6 lg:px-3' />
+            <p className="font-light text-dark/50 text-sm sm:text-xs pl-9 xl:pl-6 lg:pl-0  lg:text-center self-center pt-2">
+                        Images used are for representative purpose only.
+                        </p>
           </div>
           <div className="w-1/2 lg:w-full">
             <h2 className='font-bold text-4xl xl:text-3xl md:text-2xl lg:pt-9 sm:pt-5'>
@@ -62,6 +67,7 @@ const FlexitankMisconception = ({ className = "" }) => {
                 <Points point="PVC" />
                 <Points point="Bottom discharge" />
               </ul>
+              
             </div>
           </div>
         </div>
