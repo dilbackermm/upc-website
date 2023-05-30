@@ -49,10 +49,8 @@ export default function Home() {
               <div className='flex items-center self-start mt-2 lg:self-center '>
                 <Link href="/dunnagebag" target={"_blank"}
                   className="flex items-center bg-primaryDark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
-                 hover:bg-primaryDark/90 border-solid border-transparent hover:shadow-lg
-                 
-                  md:p-2 md:px-4 md:text-base"
-                 
+                 hover:bg-primaryDark/90 border-solid border-transparent hover:shadow-lg md:p-2 md:px-4 md:text-base"
+
                 >More
                   <Image src={arrow} className={"w-9 ml-3"} />
                 </Link>

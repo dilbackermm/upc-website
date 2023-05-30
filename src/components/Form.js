@@ -3,49 +3,63 @@ import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 import { useState } from 'react';
 
-const Form = () => {
+const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [phone, setPhone] = useState('');
+    const [cname, setCname] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
 
-    const [submitting, setSubmitting] = useState(false);
+    const pubkey = "X3kfhXretl4Bh1NBk";
+    const serkey = "service_nlwmmsz";
+    const temkey = "template_qpuqbz8";
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // setSubmitting(true);
+    emailjs.init(pubkey);
 
-        var data = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            phone: e.target.phone.value,
-            message: e.target.message.value,
-            toem: 'impelexportscontactus@gmail.com',
-            site: 'UPC',
-        };
+    const submit = () => {
+        if (name && email && message && phone && cname) {
 
-        emailjs.sendForm('service_nlwmmsz', 'template_qpuqbz8', data, 'X3kfhXretl4Bh1NBk')
-            .then(() => {
-                swal('Submitted!', 'Your application reached us, soon our team will get back to you', 'success')
-                    .then(() => {
-                        window.location.reload();
-                    });
-            })
-            .catch((error) => {
-                console.error('Error sending email:', error);
-            })
-            .finally(() => {
-                setSubmitting(false);
-            });
-    };
+            const inputfields = {
+                name: name,
+                cname: cname,
+                ctname: "Company:",
+                email: email,
+                phone: phone,
+                message: message,
+                toem: "impelexportscontactus@gmail.com",
+                newo: "United Packaging"
+                // sales@unitedpackaging.biz
+            }
+
+            emailjs.send(serkey, temkey, inputfields)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+
+            swal("Submitted!", "Your application reached us, soon our team will get back to you", "success");
+
+            setName('');
+            setCname('');
+            setEmail('');
+            setMessage('');
+            setPhone('');
+            setEmailSent(true);
+        } else {
+        }
+    }
 
     return (
-        // border border-primaryDark rounded-xl bg-light/25 shadow-md drop-shadow
-        <form onSubmit={handleSubmit} class="w-full max-w-lg p-12  ml-12 lg:ml-3">
+
+        <form class="w-full max-w-lg p-12  ml-12 lg:ml-3">
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-1/2 xs:w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-dark/75 text-sm font-bold" for="grid-first-name">
                         Name
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
-                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="name" type="text" name="name" />
+                    py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2" type="text"
+                        value={name} onChange={e => setName(e.target.value)} required
+                    />
                 </div>
                 <div class="w-1/2 xs:w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-dark/75 text-sm font-bold" for="grid-first-name">
@@ -53,7 +67,8 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="company" type="text" name="company" />
+                        type="text" value={cname} onChange={e => setCname(e.target.value)} required
+                    />
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -63,7 +78,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="e-mail" type="email" name="email" />
+                        type="email" value={email} onChange={e => setEmail(e.target.value)} required />
                 </div>
                 <div class="w-1/2 xs:w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-dark/75 text-sm font-bold" for="grid-first-name">
@@ -71,7 +86,7 @@ const Form = () => {
                     </label>
                     <input class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                        id="phone" type="tel" name="phone" />
+                        type="tel" value={phone} onChange={e => setPhone(e.target.value)} required />
                 </div>
             </div>
 
@@ -81,17 +96,16 @@ const Form = () => {
                 </label>
                 <textarea class="appearance-none block w-full bg-transparent  border-primaryDark/60 border-b 
                     py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-b-2 hover:border-b-2"
-                    rows="3" id="message" type="text" name="message" />
+                    rows="3" type="text" value={message} onChange={e => setMessage(e.target.value)} />
             </div>
             <div class="mt-9 flex items-center justify-end ">
 
-                <button type="submit" class="rounded-md bg-primaryDark px-4 py-3 text-base
-     text-primarylight shadow-sm hover:bg-primaryDark hover:shadow-lg  "disabled={submitting}>
-                    {submitting ? 'Just a moment...' : 'Submit'}</button>
+                <button onClick={submit} type="submit" class="rounded-md bg-primaryDark px-4 py-3 text-base
+     text-primarylight shadow-sm hover:bg-primaryDark hover:shadow-lg">Submit</button>
+                <span className={emailSent ? 'visible' : null}></span>
             </div>
         </form>
+    );
+};
 
-    )
-}
-
-export default Form
+export default Contact
