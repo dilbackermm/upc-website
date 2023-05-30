@@ -55,6 +55,7 @@ const DunnageSize = ({ className = "" }) => {
                    <SizeTabs />
                     </div>
                 </div>
+                <div className="flex justify-center">
                 <Link
               href="/dunnageBrochure.pdf" target={"_blank"}
               download={true}
@@ -65,6 +66,8 @@ const DunnageSize = ({ className = "" }) => {
                 <PdfIcon className={"ml-1 mr-6"} />
               </span>
             </Link>
+                </div>
+                
             </Layout>
         </main>
     )

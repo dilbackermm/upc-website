@@ -19,7 +19,7 @@ const FlexitankAdvantages = ({ className = "" }) => {
               you’re looking for other tank containers?Regardless of where you’re at, finding your next
               container has never been easier.
             </p>
-            <div className="flex items-center w-full justify-center">
+            <div className="flex items-center w-full justify-center lg:pt-6">
                 <Link
               href="/flexitankBrochure.pdf" target={"_blank"}
               download={true}
