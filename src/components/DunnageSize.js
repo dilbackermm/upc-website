@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
 import Link from 'next/link'
-
 import AnimatedText from './AnimatedText'
 import SizeTabs from './SizeTabs'
 import { PdfIcon } from './icons'
@@ -48,107 +47,7 @@ const DunnageSize = ({ className = "" }) => {
                     </div>
                 </div>
                 <div className=''>
-                    {/* <div className='lg:hidden'>
-                    <table class="w-full p-5 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
-                        <thead className='uppercase text-primaryDark'>
-                             <tr className='border-b border-b-dark/75'>
-                                <th class="px-6 py-4">Dunnage Bag type</th>
-                                <th class="px-6 py-4 border-l border-l-dark/25 ">Utility</th>
-                                <th class="px-6 py-4 border-l border-l-dark/25 ">standard</th>
-                                <th class="px-6 py-4 border-l border-l-dark/25 ">Heavy</th>
-                            </tr>
-                        </thead>
-                        <tbody className='text-dark/90 text-left  '>
-                             <tr className='border-b border-b-dark/25 '>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Item</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Polypropelene Woven Air Bag</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Polypropelene Woven Air Bag</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Polypropelene Woven Air Bag</td>
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Grammage of fabric</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Differs based on application</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Differs based on application</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Differs based on application</td>
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Product description</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Woven fabric with Polyethelene 
-                                film inside sewn top and bottom with a virgin universal valve onthe side</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Woven fabric with Polyethelene 
-                                film inside sewn top and bottom with a virgin universal valve onthe side</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Woven fabric with Polyethelene 
-                                film inside sewn top and bottom with a virgin universal valve onthe side</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Level</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Meets upto LEVEL 1 grade of AAR</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Meets upto LEVEL 3 grade of AAR</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Meets upto LEVEL 5 grade of AAR</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Fits for</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>All type of general Cargo</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Medium to heavy cargo</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Heavy cargo</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Usage Pressure</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>2.5 - 3.0 PSI</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>4.0 - 8.0 PSI</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>4.0 - 1.0 PSI</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Modes of Transportation</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Road / Rail</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Rail / Sea</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Rail & sea</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Void Size Gap</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> Upto 12" Max </td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> Upto 15" Max </td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> Upto 20" </td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Width</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> 30" 36" 48" &amp; 60"</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Length</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Can be cut to various length & customised </td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> Can be cut to various length & customised </td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Can be cut to various length & customised </td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Load Capacity</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Upto 45,000 lbs</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '> Upto 75,000 lbs</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Upto 200,000 lbs</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Pallet weight</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Approx : 700 lbs</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Approx : 700 lbs</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Approx : 700 lbs</td>
-                            </tr>
-                            <tr className='border-b border-b-dark/25'>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Packed in</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Gaylord boxes</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Gaylord boxes</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>Gaylord boxes</td>
-                            </tr>
-                            <tr className=''>
-                                <td className=' pl-4 py-2 lg:py-1 font-semibold'>Gaylord / Pallet size</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>100cm x 120cm</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>100cm x 120cm</td>
-                                <td className=' pl-4 py-2 lg:py-1 border-l border-l-dark/25 '>100cm x 120cm</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div> */}
+                    
                     <div className='flex flex-col items-center'>
                         <h1 className='py-9 lg:py-3 sm:py-2 text-5xl 2xl:text-4xl xl:text-3xl  lg:text-2xl xs:text-xl text-primaryDark font-bold '>
                             Crown Dunnage Bags specification

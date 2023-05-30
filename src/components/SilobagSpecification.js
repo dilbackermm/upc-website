@@ -108,7 +108,6 @@ const SilobagSpecification = ({ className = "" }) => {
                         <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal' > b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
                     </p>
                 </div>
-               
             </Layout>
         </main>
     )
