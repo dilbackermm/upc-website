@@ -31,6 +31,9 @@ const FlexitankAdvantages = ({ className = "" }) => {
         <div className="flex lg:flex-col items-center justify-center">
           <div className="w-1/2 lg:w-full">
             <Image src={flexi2} alt='green flexitank' className='p-6 xl:p-4  ' />
+            <p className="font-light text-dark/50 text-sm sm:text-xs font  lg:text-center self-center pl-6 lg:pl-0">
+                        Images used are for representative purpose only.
+                        </p>
           </div>
           <div className="w-1/2 ml-24 2xl:ml-20 xl:ml-16  lg:w-full lg:m-0">
             <AnimatedText text="Advantages"

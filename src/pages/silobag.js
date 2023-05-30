@@ -28,25 +28,25 @@ const silobag = () => {
       </Head>
 
       <Image src={silobanner} alt="silo banner"
-        className='-z-10 absolute w-full h-screen mb-0 object-cover 
-             '
+        className='-z-10 absolute w-full min-h-screen mb-0 object-cover '
         priority
         sizes="(max-width: 768px) 100vw,
             (max-width: 1200px) 50vw,       
             33vw"
       />
 
-      <main className="flex flex-col text-dark w-full min-h-screen 
-   bg-gradient-to-r bg-top from-[#4B2204] to-[#9c6618]/80 pb-0 mb-0 lg:items-start ">
+
+<main className="  flex flex-col  text-dark w-full min-h-screen 
+   bg-gradient-to-r bg-top from-[#F0E7D5] to-[#904C06]/80  pb-0 mb-0 lg:items-start ">
         <Navbar className='bg-transparent' />
-        <Layout className='sm:py-32 pt-0 pb-0 items-center bg-transparent '>
-          <div className='flex flex-col lg:items-center text-light'>
+        <Layout className=' pt-0 pb-0 items-center bg-transparent '>
+          <div className='flex flex-col lg:items-center text-dark'>
             <div className='w-3/5 xl:w-full lg:w-full'>
-              <AnimatedText text="Crown Silo Bags"
-                className='   pt-24 2xl:pt-6 xl:pt-3 lg:pt-16 sm:pt-6 text-secondaryLight !text-8xl !text-left xl:!text-6xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
+              <AnimatedText text="crown Silo Bags"
+                className='   pt-36 2xl:pt-6 xl:pt-3 lg:pt-16 sm:pt-6 text-dark !text-8xl !text-left xl:!text-7xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl ' />
               <p className='pt-12 pr-24 sm:pr-0 text-2xl 2xl:text-xl md:text-lg sm:text-base  '>
-                Crown Silo Bags are made of a seven-layers of Blown extruded technology with various polymers to
-                achieve the best quality Silo Bags (Polyethylene) about 180-250 micron.</p>
+              Crown Silo Bags are made of a seven-layers of Blown extruded technology with various polymers to
+                achieve the best quality Silo Bags  &#40;Polyethylene&#41; about 180-250 micron.</p>
             </div>
           </div>
         </Layout>

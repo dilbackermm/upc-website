@@ -2,9 +2,8 @@ import React from 'react'
 import Layout from './Layout'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import dunnagePic from '../../public/images/silo/silo.png'
-import tick from '../../public/images/svgs/tick.svg'
-import AnimatedText from './AnimatedText'
+import siloPic from '../../public/images/silo/silo.png'
+
 
 
 const SilobagMain = ({ className = "" }) => {
@@ -13,9 +12,12 @@ const SilobagMain = ({ className = "" }) => {
     pb-0 mb-0 ${className} `}>
             <Layout className='-!mb-20 pt-20 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 {/* <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' /> */}
-                <div className="flex lg:flex-col-reverse">
+                <div className="flex items-center lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-6">
-                        <Image src={dunnagePic} className="lg:m-auto" />
+                        <Image src={siloPic} className="lg:m-auto" />
+                        <p className="font-light text-dark/50 text-sm sm:text-xs font lg:text-center  pt-2">
+                        Images used are for representative purpose only.
+                        </p>
                     </div>
                     <div className="ml-20 sm:ml-0 w-1/2 lg:w-full py-0">
                         <motion.p
@@ -29,7 +31,7 @@ const SilobagMain = ({ className = "" }) => {
                             initial={{ y: 200, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
                             viewport={{ once: true }}
-                            className='font-normal py-6 lg:py-3 xs:py-1 text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
+                            className='font-normal  text-dark text-xl lg:text-lg xs:text-base leading-9 text-left'>
                             The outer layer is white with UV protective  coating while the inner layer in contact with the grain is black.
                         </motion.p>
                     </div>

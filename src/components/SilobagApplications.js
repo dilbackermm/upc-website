@@ -14,7 +14,7 @@ const Points = ({ point }) => {
             initial={{ y: 200 }}
             whileInView={{ y: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.1, originX: 0 }}
+            whileHover={{ scale: 1.02, originX: 0 }}
             transition={{ type: 'tween', }}
             className="flex items-center "
         >

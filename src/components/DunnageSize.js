@@ -3,8 +3,12 @@ import Layout from './Layout'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
-import tick from '../../public/images/svgs/tick.svg'
+import Link from 'next/link'
 import AnimatedText from './AnimatedText'
+import SizeTabs from './SizeTabs'
+import { PdfIcon } from './icons'
+
+
 
 
 const DunnageSize = ({ className = "" }) => {
@@ -37,172 +41,112 @@ const DunnageSize = ({ className = "" }) => {
                     </div>
                     <div className="w-1/2 lg:w-full py-3">
                         <Image src={dunnagePic} className="ml-16 lg:m-auto" />
+                        <p className="font-light text-dark/50 text-sm sm:text-xs font ml-16 lg:text-center self-center pt-2">
+                        Images used are for representative purpose only.
+                        </p>
                     </div>
                 </div>
-                <div className='lg:hidden'>
-                    <table class="w-full p-5 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
-                        <thead className='uppercase text-primaryDark'>
-                             <tr className='border-b border-b-dark/75'>
-                                <th class="px-6 py-4">Inches</th>
-                                <th class="px-6 py-4">cms</th>
-                                <th class="px-6 py-4">Level 1</th>
-                                <th class="px-6 py-4">Level 2</th>
-                                <th class="px-6 py-4">Level 3</th>
-                                <th class="px-6 py-4">Level 4</th>
-                                <th class="px-6 py-4">Level 5</th>
-                            </tr>
-                        </thead>
-                        <tbody className='text-dark/75 font-medium'>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 48</td>
-                                <td className='py-2 lg:py-1'>91 x 118</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 60</td>
-                                <td className='py-2 lg:py-1'>91 x 152</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 66</td>
-                                <td className='py-2 lg:py-1'>91 x 168</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 72</td>
-                                <td className='py-2 lg:py-1'>91 x 183</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 84</td>
-                                <td className='py-2 lg:py-1'>91 x 213</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 96</td>
-                                <td className='py-2 lg:py-1'>91 x 244</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>36 x 102</td>
-                                <td className='py-2 lg:py-1'>91 x 359</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>40 x 40</td>
-                                <td className='py-2 lg:py-1'>100 x 100</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>40 x 48</td>
-                                <td className='py-2 lg:py-1'>100 x 118</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 48</td>
-                                <td className='py-2 lg:py-1'>118 x 118</td>
-                                <td className='py-2 lg:py-1'><Image src={tick} alt="check_icon" className='mx-auto' /></td>
-                                <td className='py-2 lg:py-1'><Image src={tick} alt="check_icon" className='mx-auto' /></td>
-                                <td className='py-2 lg:py-1'><Image src={tick} alt="check_icon" className='mx-auto' /></td>
-                                <td className='py-2 lg:py-1'><Image src={tick} alt="check_icon" className='mx-auto' /></td>
-                                <td className='py-2 lg:py-1'><Image src={tick} alt="check_icon" className='mx-auto' /></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 60</td>
-                                <td className='py-2 lg:py-1'>118 x 152</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 66</td>
-                                <td className='py-2 lg:py-1'>118 x 168</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 72</td>
-                                <td className='py-2 lg:py-1'>118 x 183</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 84</td>
-                                <td className='py-2 lg:py-1'>118 x 213</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/25'>
-                                <td className='py-2 lg:py-1'>48 x 96</td>
-                                <td className='py-2 lg:py-1'>118 x 245</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                             <tr className='border-b border-b-dark/75'>
-                                <td className='py-2 lg:py-1'>48 x 102</td>
-                                <td className='py-2 lg:py-1'>118 x 259</td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>
-                                <td className='py-2 lg:py-1'></td>  
-                            </tr>
-                        </tbody>
-                    </table>
+                <div className=''>
+                    
+                    <div className='flex flex-col items-center'>
+                        <h1 className='py-9 lg:py-3 sm:py-2 text-5xl 2xl:text-4xl xl:text-3xl  lg:text-2xl xs:text-xl text-primaryDark font-bold '>
+                            Crown Dunnage Bags specification
+                        </h1>
+                   <SizeTabs />
+                    </div>
                 </div>
+                <div className="flex justify-center">
+                <Link
+              href="/dunnageBrochure.pdf" target={"_blank"}
+              download={true}
+              whileHover={{ y: -5 }}
+              className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
+              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
+              <span className='p-8'>
+                <PdfIcon className={"ml-1 mr-6"} />
+              </span>
+            </Link>
+                </div>
+                
             </Layout>
         </main>
     )
 }
 
 export default DunnageSize
+
+{/* <table class="w-full p-3 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 sm:text-sm ">
+<tbody className='text-dark/90 text-left  '>
+     <tr className='border-b border-b-dark/25 '>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Item</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Polypropelene Woven Air Bag</td>
+       
+    </tr>
+     <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Grammage of fabric</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Differs based on application</td>
+      
+    </tr>
+     <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Product description</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Woven fabric with Polyethelene 
+        film inside sewn top and bottom with a virgin universal valve onthe side</td>
+  
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Level</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Meets upto LEVEL 1 grade of AAR</td>
+     
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Fits for</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>All type of general Cargo</td>
+    
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Usage Pressure</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>2.5 - 3.0 PSI</td>
+    
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Modes of Transportation</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Road / Rail</td>
+     
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Void Size Gap</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '> Upto 12" Max </td>
+       
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Width</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
+       
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Length</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Can be cut to various length & customised </td>
+     
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Load Capacity</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Upto 45,000 lbs</td>
+       
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Pallet weight</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Approx : 700 lbs</td>
+ 
+    </tr>
+    <tr className='border-b border-b-dark/25'>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Packed in</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>Gaylord boxes</td>
+       
+    </tr>
+    <tr className=''>
+        <td className=' pl-4 xs:pl-2 py-1 font-semibold'>Gaylord / Pallet size</td>
+        <td className=' pl-4 xs:pl-2 py-1 border-l border-l-dark/25 '>100cm x 120cm</td>
+        
+    </tr>
+</tbody>
+</table> */}

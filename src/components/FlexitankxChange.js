@@ -1,12 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import styles from '../styles/index'
-import { TitleText, TypingText } from './CustomTexts';
-import { uses } from '../constants';
-import StartSteps from './StartSteps';
+import Link from 'next/link'
+import { PdfIcon } from './icons'
 import AnimatedText from '@/components/AnimatedText'
 
 
@@ -24,7 +19,18 @@ const FlexitankAdvantages = ({ className = "" }) => {
               you’re looking for other tank containers?Regardless of where you’re at, finding your next
               container has never been easier.
             </p>
-
+            <div className="flex items-center w-full justify-center lg:pt-6">
+                <Link
+              href="/flexitankBrochure.pdf" target={"_blank"}
+              download={true}
+              whileHover={{ y: -5 }}
+              className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-66 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
+              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
+              <span className='p-8'>
+                <PdfIcon className={"ml-1 mr-6"} />
+              </span>
+            </Link>
+                </div>
 
             <div className="">
             <div className='flex lg:flex-col items-start justify-between pt-10'>

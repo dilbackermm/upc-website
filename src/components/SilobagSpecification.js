@@ -1,10 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { TitleText, TypingText } from './CustomTexts';
-import dunnagePic from '../../public/images/dunnageBag/dunnagepic1.png'
-import tick from '../../public/images/svgs/tick.svg'
+import { PdfIcon } from './icons'
+import Link from 'next/link'
 import AnimatedText from './AnimatedText'
 import rarrow from '../../public/images/svgs/rightarrow.svg'
 
@@ -15,7 +12,7 @@ const SilobagSpecification = ({ className = "" }) => {
             <Layout className='sm:p-6 sm:!mb-10 !pb-0 !pt-20 bg-transparent mx-32 xl:mx-12 lg:mx-6'>
                 <AnimatedText text="Silo Bag Specifications" className='sm:!text-4xl pb-12 !text-6xl text-primaryDark' />
                 <div className='lg:hidden'>
-                    <table class="w-full p-5 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
+                    <table class="w-full p-5 sm:p-3 xs:p-2 table-auto text-center  bg-light/50 border border-dark/75 shadow-lg pt-12 ">
                         <thead className='uppercase text-primaryDark'>
                             <tr className='border-b border-b-dark/75'>
                                 <th class="px-6 py-4">Sl.No.</th>
@@ -84,7 +81,7 @@ const SilobagSpecification = ({ className = "" }) => {
                                 <td className='py-2 lg:py-1'></td>
                                 <td className='py-2 lg:py-1'>ASTM D1894</td>
                             </tr>
-                            <tr className='border-b border-b-dark/25'>
+                            <tr className='pb-2'>
                                 <td className='py-2 lg:py-1'>10</td>
                                 <td className='py-2 lg:py-1'>WVTR</td>
                                 <td className='py-2 lg:py-1'>gm / ms 2 / day</td>
@@ -94,31 +91,22 @@ const SilobagSpecification = ({ className = "" }) => {
                     </table>
                 </div>
                 <div className="sm:py-0 py-12">
-                    <motion.p
-                        initial={{ y: 200, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
+                    <p
+                        className='pt-3 pb-2 lg:py-1 font-normal text-dark text-xl lg:text-lg sm:text-base text-left'>
                         Three or five or seven co-extruded layers of polyethylene plastic film UV protected.
-                    </motion.p>
-                    <motion.p
-                        initial={{ y: 200, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
+                    </p>
+                    <p
+                        className='pt-3 pb-2 lg:py-1 font-medium text-dark text-xl lg:text-lg sm:text-base text-left'>
                         Sizes:
-                        <p className='py-3'>a. Diameter of 7 to 12 feet</p>
-                        <p>b. Length of 60m, 75 m, 120 m or higher (inhouse automatic folding machine)</p>
-                    </motion.p>
-                    <motion.p
-                        initial={{ y: 200, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='py-6 lg:py-3 xs:py-1 font-normal text-dark text-2xl lg:text-xl xs:text-base leading-10 text-left'>
-                        Capacity ranges from 180-250 tons or higher (for dry products)
-                        <p className='py-3'> a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.</p>
-                        <p> b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
-                    </motion.p>
+                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'>a. Diameter of 7 to 12 feet</p>
+                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'>b. Length of 60m, 75 m, 120 m or higher  &#40;inhouse automatic folding machine&#41; </p>
+                    </p>
+                    <p
+                        className='pt-3 pb-2 lg:py-1 font-medium text-dark text-xl lg:text-lg sm:text-base text-left'>
+                        Capacity ranges from 180-250 tons or higher  &#40;for dry products&#41;
+                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'> a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.</p>
+                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal' > b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
+                    </p>
                 </div>
             </Layout>
         </main>

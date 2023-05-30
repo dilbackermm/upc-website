@@ -27,7 +27,7 @@ import Accessory16 from '../../public/images/accessories/Accessories-16.jpg'
 
 
 
-const Items = ({ img }) => {
+const Items = ({ img, code }) => {
     return (
         <motion.div
             initial={{ x: -200, opacity:0 }}
@@ -35,10 +35,10 @@ const Items = ({ img }) => {
             viewport={{ once: true }}
             whileHover={{scale:1.02}}
             transition={{ type: 'tween', staggerChildren: 1 }}
-            className=""
+            className="flex flex-col py-3"
         >
          <Image src={img} className='w-80 2xl:w-72 xl:w-60 lg:w-48 sm:w-42 m-6 lg:m-3 sm:m-1 mx-6 xs:mx-auto sm:my-3 rounded-xl border border-primaryDark/25 shadow-md' />
-  
+  <p className="text-lg font-medium mx-6 lg:mx-3 sm:mx-1 ">Product Code: <span className='font-normal'>{code}</span></p>
         </motion.div>
     )
 }
@@ -59,22 +59,22 @@ export default function Home() {
                 <Layout className=' pt-0 pb-0  bg-transparent '>
                     <AnimatedText text="Accessories" className='text-center ' />
                     <div className="flex items-center flex-wrap  py-16 justify-center">
-                      <Items img={Accessory1} />
-                      <Items img={Accessory2} />
-                      <Items img={Accessory3} />
-                      <Items img={Accessory4} />
-                      <Items img={Accessory5} />
-                      <Items img={Accessory6} />
-                      <Items img={Accessory7} />
-                      <Items img={Accessory8} />
-                      <Items img={Accessory9} />
-                      <Items img={Accessory10} />
-                      <Items img={Accessory11} />
-                      <Items img={Accessory12} />
-                      <Items img={Accessory13} />
-                      <Items img={Accessory14} />
-                      <Items img={Accessory15} />
-                      <Items img={Accessory16} />
+                      <Items img={Accessory1}  code="A001" />
+                      <Items img={Accessory2}  code="A002" />
+                      <Items img={Accessory3}  code="A003" />
+                      <Items img={Accessory4}  code="A004" />
+                      <Items img={Accessory5}  code="A005" />
+                      <Items img={Accessory6}  code="A006" />
+                      <Items img={Accessory7}  code="A007" />
+                      <Items img={Accessory8}  code="A008" />
+                      <Items img={Accessory9}  code="A009" />
+                      <Items img={Accessory10} code="A010"  />
+                      <Items img={Accessory11} code="A011"  />
+                      <Items img={Accessory12} code="A012"  />
+                      <Items img={Accessory13} code="A013"  />
+                      <Items img={Accessory14} code="A014"  />
+                      <Items img={Accessory15} code="A015"  />
+                      <Items img={Accessory16} code="A016"  />
                       
                     </div>
                     

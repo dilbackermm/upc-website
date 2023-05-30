@@ -13,14 +13,7 @@ const SilobagEnding = ({ className = "" }) => {
         <main className={`flex pt-0 bg-primarylight text-dark w-full min-h-auto 
     pb-0 mb-0 ${className} `} id='contactus ' >
             <Layout className='!pb-0 py-20 bg-transparent -my-16 mx-32 xl:mx-12 lg:mx-6 '>
-                <div className="flex lg:flex-col lg:pb-20">
-                    <div className="sm:ml-0 w-1/2 h-auto lg:w-full p-5">
-                        <Image src={img1} className="lg:m-auto w-auto h-auto object-fill" />
-                    </div>
-                    <div className="sm:ml-0 w-2/4 h-auto lg:w-full p-5">
-                        <Image src={img2} className="lg:m-auto  w-auto h-[93%] object-fill" />
-                    </div>
-                </div>
+               
                 <div className='lg:hidden pb-20 mb-28'>
                     <AnimatedText text="Silo Bag Capacity chart" className='sm:!text-4xl py-20 !text-6xl text-primaryDark' />
                     <table class="w-full p-10 table-auto text-center bg-light/50 border border-dark/75 shadow-lg py-20">
