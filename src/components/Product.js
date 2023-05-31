@@ -34,23 +34,23 @@ const Product = ({ className = "" }) => {
       <br className="md:block hidden"/> to explore </> } textStyles="text-center" /> */}
           <div onClick={() => {
             if (active == "prod-1") {
-              window.location = '/barrierliners'
+              window.location.href = "/barrierliners"
               console.log(active)
             }
             if (active == "prod-2") {
-              window.location = '/silobag'
+              window.location.href = "/silobag"
               console.log(active)
             }
             if (active == "prod-3") {
-              window.location = '/dunnagebag'
+              window.location.href = '/dunnagebag'
               console.log(active)
             }
             if (active == "prod-4") {
-              window.location = '/flexitank'
+              window.location.href = '/flexitank'
               console.log(active)
             }
             if (active == "prod-5") {
-              window.location = '/accessories'
+              window.location.href = '/accessories'
               console.log(active)
             }
           }
