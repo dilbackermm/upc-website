@@ -65,6 +65,8 @@ const FlexitankUses = ({ className = "" }) => {
               src="../images/products/flexitank2.png"
               alt="flexitank"
               className="w-[90%] object-contain"
+              width={200}
+              height={200}
             />
           </div>
 
