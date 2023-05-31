@@ -9,20 +9,20 @@ import Image from 'next/image'
 
 const Points = ({ point }) => {
     return (
-      <motion.li
-      initial={{x: -200}}
-      whileInView={{x:0, transition:{duration:0.9, ease:"easeInOut"}}}
-  viewport={{once:true}}
-        whileHover={{ scale: 1.1, originX: 0 }}
-        transition={{ type: 'tween', }}
-        className="flex items-center "
-      >
-    
-        <Image src={tick} alt="check_icon" className='mx-2 sm:mx-0 p-0.5' />
-       <h2 className='py-3 pl-3 text-lg sm:text-base text-dark/75 font-medium'>{point}</h2>
-      </motion.li>
+        <motion.li
+            initial={{ x: -200 }}
+            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.1, originX: 0 }}
+            transition={{ type: 'tween', }}
+            className="flex items-center "
+        >
+
+            <Image src={tick} alt="check_icon" className='mx-2 sm:mx-0 p-0.5' />
+            <h2 className='py-3 pl-3 text-lg sm:text-base text-dark/75 font-medium'>{point}</h2>
+        </motion.li>
     )
-  }
+}
 
 
 const DunnageService = ({ className = "" }) => {
@@ -47,19 +47,19 @@ const DunnageService = ({ className = "" }) => {
                     <div className="w-full px-5 pb-6 mx-auto">
 
                         <ul className='ml-24 lg:ml-1'>
-                           <Points point="Duty-free delivery to almost all countries" />
-                           <Points point="Certified products (AAR certificate) with the highest quality" />
-                           <Points point="Best prices and fast delivery" />
-                           <Points point="Excellent customer service" />
-                           <Points point="Headquarters and management in India" />
-                           
+                            <Points point="Duty-free delivery to almost all countries" />
+                            <Points point="Certified products (AAR certificate) with the highest quality" />
+                            <Points point="Best prices and fast delivery" />
+                            <Points point="Excellent customer service" />
+                            <Points point="Headquarters and management in India" />
+
                         </ul>
                     </div>
 
                 </div>
                 <div className='py-12 text-primaryDark text-center'>
-                    <h2 className='text-7xl lg:text-4xl font-light'>"Become part of our team</h2>
-                    <h2 className='pt-3 text-7xl lg:text-4xl font-light'>Inviting distributors"</h2>
+                    <h2 className='text-7xl lg:text-4xl font-light'>Become part of our team</h2>
+                    <h2 className='pt-3 text-7xl lg:text-4xl font-light'>Inviting distributors</h2>
                 </div>
             </Layout>
         </main>

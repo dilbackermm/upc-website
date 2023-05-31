@@ -36,52 +36,52 @@ pb-0 mb-0 ${className} `} id='contactus ' >
                                 </thead>
                                 <tbody className='text-dark/75 font-medium sm:text-sm'>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>9' x 200'</td>
+                                        <td className='py-2 lg:py-1'>9&apos; x 200&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>8</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>9' x 250'</td>
+                                        <td className='py-2 lg:py-1'>9&apos; x 250&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>6</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>10' x 250'</td>
+                                        <td className='py-2 lg:py-1'>10&apos; x 250&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>6</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>10' x 300'</td>
+                                        <td className='py-2 lg:py-1'>10&apos; x 300&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>6</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>10' x 500'</td>
+                                        <td className='py-2 lg:py-1'>10&apos; x 500&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>2</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>10.5' x 500'</td>
+                                        <td className='py-2 lg:py-1'>10.5&apos; x 500&apos;</td>
                                         <td className='py-2 lg:py-1'>9.3 mil</td>
                                         <td className='py-2 lg:py-1'>2</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>12' x 200'</td>
+                                        <td className='py-2 lg:py-1'>12&apos; x 200&apos;</td>
                                         <td className='py-2 lg:py-1'>10 mil</td>
                                         <td className='py-2 lg:py-1'>4</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>12' x 300'</td>
+                                        <td className='py-2 lg:py-1'>12&apos; x 300&apos;</td>
                                         <td className='py-2 lg:py-1'>10 mil</td>
                                         <td className='py-2 lg:py-1'>4</td>
                                     </tr>
                                     <tr className='border-b border-b-dark/25'>
-                                        <td className='py-2 lg:py-1'>12' x 400'</td>
+                                        <td className='py-2 lg:py-1'>12&apos; x 400&apos;</td>
                                         <td className='py-2 lg:py-1'>10 mil</td>
                                         <td className='py-2 lg:py-1'>2</td>
                                     </tr>
                                     <tr className=''>
-                                        <td className='py-2 lg:py-1'>12' x 500'</td>
+                                        <td className='py-2 lg:py-1'>12&apos; x 500&apos;</td>
                                         <td className='py-2 lg:py-1'>10 mil</td>
                                         <td className='py-2 lg:py-1'>2</td>
                                     </tr>
@@ -90,11 +90,11 @@ pb-0 mb-0 ${className} `} id='contactus ' >
                         </motion.div>
                     </div>
                 </div>
-                
-               
-                
-             
-              
+
+
+
+
+
             </Layout>
         </main>
     )

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, navVariants } from '../utils/motion';
+import Image from 'next/image'
 
 const ExploreCard = ({ id, imgUrl, title, conte, index, active, handleClick }) => (
   <motion.button
@@ -11,12 +12,14 @@ const ExploreCard = ({ id, imgUrl, title, conte, index, active, handleClick }) =
       } flex items-center justify-center min-w-[170px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex
   cursor-pointer border border-solid border-primaryDark lg:border-none rounded-3xl  `}
     whileHover={() => handleClick(id)}
-    
+
   >
-    <img
+    <Image
       src={imgUrl}
       alt={title}
       className="absolute w-full h-full object-cover rounded-[24px]"
+      width={200}
+      height={200}
     />
     {active !== id ? (
       <h3 className="font-semibold  text-[18px] lg:bg-[rgba(137,96,51,0.7)] lg:glassmorphism  lg:mb-0 lg:text-center lg:px-2 lg:py-3 rounded-[24px]

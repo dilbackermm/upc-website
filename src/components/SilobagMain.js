@@ -14,9 +14,9 @@ const SilobagMain = ({ className = "" }) => {
                 {/* <AnimatedText text="Dunnage bag Sizes" className='pb-12 !text-6xl' /> */}
                 <div className="flex items-center lg:flex-col-reverse">
                     <div className="w-1/2 lg:w-full py-6">
-                        <Image src={siloPic} className="lg:m-auto" />
+                        <Image src={siloPic} alt='silo bags' className="lg:m-auto" />
                         <p className="font-light text-dark/50 text-sm sm:text-xs font lg:text-center  pt-2">
-                        Images used are for representative purpose only.
+                            Images used are for representative purpose only.
                         </p>
                     </div>
                     <div className="ml-20 sm:ml-0 w-1/2 lg:w-full py-0">

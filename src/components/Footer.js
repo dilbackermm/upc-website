@@ -77,8 +77,8 @@ const Footer = () => {
 
           <div className='flex flex-col basis-2/10 lg:mt-12 sm:mt-16 ms-5 sm:ms-0 '>
             <div className="flex flex-raw">
-              <a href="/"><FacebookIcon className="mx-3 pb-3 w-9" /></a>
-              <a href="/"><LinkedInIcon className="mx-3 pb-3 w-9 " /></a>
+              <Link href="/"><FacebookIcon className="mx-3 pb-3 w-9" /></Link>
+              <Link href="/"><LinkedInIcon className="mx-3 pb-3 w-9 " /></Link>
             </div>
           </div>
 

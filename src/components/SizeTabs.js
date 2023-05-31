@@ -112,12 +112,12 @@ const SizeTabs = () => {
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Void Size Gap</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '> Upto 12" Max </td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '> Upto 12&quot; Max </td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Width</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30&quot; 36&quot; 48&quot; &amp; 60&quot;</td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>
@@ -189,12 +189,12 @@ const SizeTabs = () => {
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Void Size Gap</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>Upto 15" Max</td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>Upto 15&quot; Max</td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Width</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30&quot; 36&quot; 48&quot; &amp; 60&quot;</td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>
@@ -266,12 +266,12 @@ const SizeTabs = () => {
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Void Size Gap</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>Upto 20" Max</td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>Upto 20&quot; Max</td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>
                         <td className=' px-4 xs:pl-2 py-2 xs:py-1 font-semibold'>Width</td>
-                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30" 36" 48" &amp; 60"</td>
+                        <td className=' px-4 xs:pl-2 py-2 xs:py-1 border-l border-l-dark/25 '>30&quot; 36&quot; 48&quot; &amp; 60&quot;</td>
 
                       </tr>
                       <tr className='border-b border-b-dark/25'>

@@ -37,7 +37,7 @@ const DunnageBenefits = ({ className = "" }) => {
     pb-0 mb-0 ${className} `} >
             <Layout className='!pt-0 !pb-6 bg-transparent  mx-32 xl:mx-12 lg:mx-6 '>
                 <AnimatedText text="Benefits of UPC Dunnage Bags " className='!pt-6 pb-14' />
-                <Image src={dunnage} className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-10 -translate-y-16
+                <Image src={dunnage} alt="dunnage" className='absolute w-[600px] 2xl:w-[440px] xl:w-[360px] right-60 xl:right-32  z-10 -translate-y-16
                 2xl:translate-y-5
                 lg:relative lg:z-0 lg:right-auto lg:m-auto lg:pt-6' />
                 <div className='py-12 lg:py-6'>
@@ -55,30 +55,30 @@ const DunnageBenefits = ({ className = "" }) => {
                 </div>
                 <div className="py-12">
                     <AnimatedText text="Why use Crown’s Dunnage" className='!pt-24 xl:!pt-9 lg:!py-5 lg  !text-left text-primaryDark !text-6xl' />
-                    <p  className='py-6 lg:py-3 xs:py-1 text-dark text-2xl 2xl:text-xl 2xl:leading-[2rem] lg:text-lg xs:text-base leading-10 text-left'>During transit, your packages may go through tough environmental
+                    <p className='py-6 lg:py-3 xs:py-1 text-dark text-2xl 2xl:text-xl 2xl:leading-[2rem] lg:text-lg xs:text-base leading-10 text-left'>During transit, your packages may go through tough environmental
                         conditions while in sorting facilities, trucks, ships and other vehicles.
                         Dunnage is useful because it prevents items from moving and helps to
                         absorb shock. Here are the three main benefits of using dunnage:</p>
                     <div className='flex flex-col items-center justify-between lg:pt-4'>
                         <motion.div
-                        initial={{ x: -200 }}
-                        whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='flex flex-col  w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
+                            initial={{ x: -200 }}
+                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+                            viewport={{ once: true }}
+                            className='flex flex-col  w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
                             <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                 1. Damage protection
                             </h2>
                             <p className='text-lg 2xl:text-base lg:text-lg md:text-base xs:text-sm py-2'>
                                 Dunnage protects packages when they are sliding across a truck,
                                 ship, or train. Proper dunnage can be incredibly cheap, but it protects
-                                valuable, fragile, and loose items. 
+                                valuable, fragile, and loose items.
                             </p>
                         </motion.div>
                         <motion.div
-                        initial={{ x: -200 }}
-                        whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 px-6 py-2 xl:py-1 xl:px-4 '>
+                            initial={{ x: -200 }}
+                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+                            viewport={{ once: true }}
+                            className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 px-6 py-2 xl:py-1 xl:px-4 '>
                             <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                 2. Moisture protection
                             </h2>
@@ -89,10 +89,10 @@ const DunnageBenefits = ({ className = "" }) => {
                             </p>
                         </motion.div>
                         <motion.div
-                        initial={{ x: -200 }}
-                        whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
-                        viewport={{ once: true }}
-                        className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
+                            initial={{ x: -200 }}
+                            whileInView={{ x: 0, transition: { duration: 0.9, ease: "easeInOut" } }}
+                            viewport={{ once: true }}
+                            className='flex flex-col w-2/3 lg:w-full m-3 lg:m-2 xs:m-1 border-y border-y-primaryDark lg:border lg:border-primaryDark lg:rounded-lg lg:shadow-sm lg:bg-secondaryLight/10 p-6 xl:p-4'>
                             <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                 3. Shock Protection
                             </h2>
@@ -114,7 +114,7 @@ const DunnageBenefits = ({ className = "" }) => {
                     <div className="w-1/3 lg:w-full">
                         <h2 className='text-primaryDark text-4xl lg:text-2xl text-center font-semibold'>
                             At Sea</h2></div>
-                    <div className="w-1/3 lg:w-full"><Image src={transportation2} /></div>
+                    <div className="w-1/3 lg:w-full"><Image src={transportation2} alt='transportation' /></div>
                     <div className="w-1/3 lg:w-full">
                         <ul>
                             <li><p className='p-3 xl:pt-1 lg:p-2 xs:p-1 text-left text-dark/75 font-medium text-xl xl:text-lg xs:text-base ml-12 lg:ml-1'>Loading ships</p></li>
@@ -129,7 +129,7 @@ const DunnageBenefits = ({ className = "" }) => {
                     <div className="w-1/3 lg:w-full">
                         <h2 className='text-primaryDark text-4xl lg:text-2xl text-center font-semibold'>
                             On The Road</h2></div>
-                    <div className="w-1/3 lg:w-full"><Image src={transportation3} /></div>
+                    <div className="w-1/3 lg:w-full"><Image src={transportation3} alt='transportation' /></div>
                     <div className="w-1/3 lg:w-full">
                         <ul>
                             <li><p className='p-3 xl:pt-1 lg:p-2 xs:p-1 text-left text-dark/75 font-medium text-xl xl:text-lg xs:text-base ml-12 lg:ml-1'>Turning corners</p></li>
@@ -144,7 +144,7 @@ const DunnageBenefits = ({ className = "" }) => {
                     <div className="w-1/3 lg:w-full">
                         <h2 className='text-primaryDark text-4xl lg:text-2xl text-center font-semibold'>
                             By Rail</h2></div>
-                    <div className="w-1/3 lg:w-full"><Image src={transportation1} /></div>
+                    <div className="w-1/3 lg:w-full"><Image src={transportation1} alt='transportation' /></div>
                     <div className="w-1/3 lg:w-full">
                         <ul>
                             <li><p className='p-3 xl:pt-1 lg:p-2 xs:p-1 text-left text-dark/75 font-medium text-xl xl:text-lg xs:text-base ml-12 lg:ml-1'>Shunting</p></li>
@@ -162,7 +162,7 @@ const DunnageBenefits = ({ className = "" }) => {
                     <div className=' py-6 flex flex-col lg:flex-col items-start justify-between'>
 
                         <div className='flex items-center sm:flex-col'>
-                            <Image src={worldclass1} className='w-56 lg:w-40 ' />
+                            <Image src={worldclass1} alt='worldclass1' className='w-56 lg:w-40 ' />
                             <div className="ml-12">
                                 <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                     Direct from the manufacturer       </h2>
@@ -175,7 +175,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             </div>
                         </div>
                         <div className='flex items-center sm:flex-col'>
-                            <Image src={worldclass2} className='w-56 lg:w-40 ' />
+                            <Image src={worldclass2} alt='worldclass2' className='w-56 lg:w-40 ' />
                             <div className="ml-12">
                                 <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                     Exclusive branding       </h2>
@@ -185,7 +185,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             </div>
                         </div>
                         <div className='flex items-center sm:flex-col'>
-                            <Image src={worldclass3} className='w-56 lg:w-40 ' />
+                            <Image src={worldclass3} alt='worldclass3' className='w-56 lg:w-40 ' />
                             <div className="ml-12">
                                 <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                     Area protection      </h2>
@@ -197,7 +197,7 @@ const DunnageBenefits = ({ className = "" }) => {
                             </div>
                         </div>
                         <div className='flex items-center sm:flex-col'>
-                            <Image src={worldclass4} className='w-56 lg:w-40 ' />
+                            <Image src={worldclass4} alt='worldclass4' className='w-56 lg:w-40 ' />
                             <div className="ml-12 ">
                                 <h2 className='text-2xl lg:text-xl xs:text-lg font-semibold text-primaryDark py-2'>
                                     Delivery of shipment       </h2>

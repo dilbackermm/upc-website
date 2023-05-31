@@ -12,15 +12,15 @@ import store4 from '../../public/images/flexitanks/store4.png'
 
 const Uses = ({ use, content }) => {
   return (
-      <motion.li
-          initial={{opacity:0 }}
-          whileInView={{ opacity:1 }}
-          viewport={{ once: true }}
-          className="flex flex-col pl-9 lg:pl-1 2xl:pl-7 xl:pl-6 py-3 lg:py-2 sm:py-1 items-start  "
-      >
-          <h2 className='py-3 lg:py-2 sm:py-1 pl-3 lg:pl-1 text-3xl xl:text-2xl sm:text-xl xs:text-lg text-primaryDark font-semibold'>{use}</h2>
-          <p className='pt-2 lg:pt-1 pb-3 pl-3 lg:pl-1 text-lg xl:text-base lg:text-lg sm:text-base xs:text-sm text-dark'>{content}</p>
-      </motion.li>
+    <motion.li
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      className="flex flex-col pl-9 lg:pl-1 2xl:pl-7 xl:pl-6 py-3 lg:py-2 sm:py-1 items-start  "
+    >
+      <h2 className='py-3 lg:py-2 sm:py-1 pl-3 lg:pl-1 text-3xl xl:text-2xl sm:text-xl xs:text-lg text-primaryDark font-semibold'>{use}</h2>
+      <p className='pt-2 lg:pt-1 pb-3 pl-3 lg:pl-1 text-lg xl:text-base lg:text-lg sm:text-base xs:text-sm text-dark'>{content}</p>
+    </motion.li>
   )
 }
 
@@ -28,16 +28,16 @@ const Uses = ({ use, content }) => {
 const Items = ({ img, item }) => {
   return (
     <div
-    className="flex flex-col items-center "
+      className="flex flex-col items-center "
     >
       <Image src={img} alt="check_icon"
-       className='mx-6 xl:mx-3 p-6 2xl:p-5 xl:p-4 
+        className='mx-6 xl:mx-3 p-6 2xl:p-5 xl:p-4 
         bg-light rounded-lg border border-primaryDark 
         xl:w-36 w-60 2xl:w-44 sm:w-32 xs:w-28' />
       <h2 className='py-3 text-center text-xl  
       xl:text-lg sm:text-base xs:text-sm text-dark/75 font-medium'>
         {item}
-        </h2>
+      </h2>
     </div>
   )
 }
@@ -61,7 +61,7 @@ const FlexitankUses = ({ className = "" }) => {
               But also for food-grade goods like edible oil, fruit concentrates,
               drinks, among others.
             </motion.p>
-            <img
+            <Image
               src="../images/products/flexitank2.png"
               alt="flexitank"
               className="w-[90%] object-contain"
@@ -71,61 +71,61 @@ const FlexitankUses = ({ className = "" }) => {
           <div className="w-7/12 lg:w-full lg:flex-col 2xl:ml-12 xl:ml-36 lg:ml-0 lg:pt-3">
             <ul>
               <Uses
-              use="1. Fuel storage"
-              content="Liquid fuels including gasoline, diesel, and oil can be stored
+                use="1. Fuel storage"
+                content="Liquid fuels including gasoline, diesel, and oil can be stored
                and transported in flexitanks easily. they are primarily utilized 
                for storage. Coupled with a protective lining and berm, 
                to provide extra containment safety to the surrounding environment.
               "
               />
               <Uses
-              use="2. Portable water storage"
-              content="Flexitanks occupy very little space and are easy to transport.
+                use="2. Portable water storage"
+                content="Flexitanks occupy very little space and are easy to transport.
                In case of emergencies or during disaster reliefs, they are also used to 
                store and transport potable water
               "
               />
               <Uses
-              use="3. Food-grade liquid storage"
-              content="Flexitanks enable the safe storage of food-grade 
+                use="3. Food-grade liquid storage"
+                content="Flexitanks enable the safe storage of food-grade 
               liquid ingredients, such as milk, juices, wines, fructose 
               syrup and others.
               "
               />
               <Uses
-              use="4. Industrial chemical storage"
-              content="flexitanks are ideal for transporting and storing industrial 
+                use="4. Industrial chemical storage"
+                content="flexitanks are ideal for transporting and storing industrial 
               liquid chemicals such as liquid detergents, lubricants, fertilizers, 
               liquid latex, and paints, among others.
               "
               />
               <Uses
-              use="5. Single-use & primary storage"
-              content="Flexitanks can decrease the overall storage costes
+                use="5. Single-use & primary storage"
+                content="Flexitanks can decrease the overall storage costes
                in cases where liquid storage is not for a long duration."
               />
             </ul>
           </div>
         </div>
         <div className="flex lg:flex-col-reverse items-satrt">
-         
-         <div className=" flex  w-1/2 lg:w-full ps-6 lg:ps-1 ">
-           <div className="flex flex-col lg:flex-row md:flex-col">
-             <div className="py-4 xl:py-2 flex flex-row">
-             <Items item="Food-grade liquids" img={store1}  />
-             <Items item="Chemicals" img={store2}  />
-             </div>
-             <div className="py-4 xl:py-2 flex flex-row">
-             <Items item="Water" img={store3}  />
-             <Items item="Oil" img={store4}  /> 
-             </div>
-             </div>
-         </div>
-         <div className="w-1/2 lg:w-full p-9 lg:p-6">
-           <AnimatedText text="What can you carry in a Flexitank"
-             className='text-center text-primaryDark' />
-         </div>
-       </div>
+
+          <div className=" flex  w-1/2 lg:w-full ps-6 lg:ps-1 ">
+            <div className="flex flex-col lg:flex-row md:flex-col">
+              <div className="py-4 xl:py-2 flex flex-row">
+                <Items item="Food-grade liquids" img={store1} />
+                <Items item="Chemicals" img={store2} />
+              </div>
+              <div className="py-4 xl:py-2 flex flex-row">
+                <Items item="Water" img={store3} />
+                <Items item="Oil" img={store4} />
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 lg:w-full p-9 lg:p-6">
+            <AnimatedText text="What can you carry in a Flexitank"
+              className='text-center text-primaryDark' />
+          </div>
+        </div>
 
       </Layout>
     </main>

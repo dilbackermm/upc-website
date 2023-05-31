@@ -56,7 +56,7 @@ md:w-[2px] md:left-[30px] sm:-left-[10px] xs:-left-[21px]
                             step="step 1"
                             instruction="Take out the SILO bag from the box."
                         />
-                        <Image src={mountinPic1} className='ml-20 lg:ml-12 sm:ml-0' />
+                        <Image src={mountinPic1} alt='mountinPic1' className='ml-20 lg:ml-12 sm:ml-0' />
                         <Instructions
                             step="step 2"
                             instruction="Cut the blue cords taking care NOT TO CUT the white cords."
@@ -65,7 +65,7 @@ md:w-[2px] md:left-[30px] sm:-left-[10px] xs:-left-[21px]
                             step="step 3"
                             instruction="Open, unfold and lay it out flat as shown below"
                         />
-                          <Image src={mountinPic2} className='ml-20 lg:ml-12 sm:ml-0' />
+                        <Image src={mountinPic2} alt='mountinPic2' className='ml-20 lg:ml-12 sm:ml-0' />
                         <Instructions
                             step="step 4"
                             instruction="Place the bag right between the backstop and the tunnel, with the black folded edges 
@@ -123,21 +123,21 @@ md:w-[2px] md:left-[30px] sm:-left-[10px] xs:-left-[21px]
                             instruction="Make a 1-inch ‘X’ through the tape and bag and let it vent for 2 to 3 days till it stops releasing 
                             the gas built up within and reseal. Please note that inhaling silage gases is hazardous."
                         />
-                       
+
 
                     </ul>
                 </div>
                 <div className="flex items-center w-full justify-center">
-                <Link
-              href="/siloBrochure.pdf" target={"_blank"}
-              download={true}
-              whileHover={{ y: -5 }}
-              className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
-              <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
-              <span className='p-8'>
-                <PdfIcon className={"ml-1 mr-6"} />
-              </span>
-            </Link>
+                    <Link
+                        href="/siloBrochure.pdf" target={"_blank"}
+                        download={true}
+                        whileHover={{ y: -5 }}
+                        className=" flex items-center w-96 sm:w-60 justify-between bg-light  mt-16 rounded-lg shadow-lg border broder-solid border-primaryDark hover:shadow-xl ">
+                        <h6 className="px-12 py-6 md:p-6 sm:p-3 text-primaryDark  text-3xl md:text-2xl sm:text-xl font-semibold">Download Brochure</h6>
+                        <span className='p-8'>
+                            <PdfIcon className={"ml-1 mr-6"} />
+                        </span>
+                    </Link>
                 </div>
             </Layout>
         </main>

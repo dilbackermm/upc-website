@@ -52,7 +52,7 @@ export default function Home() {
                  hover:bg-primaryDark/90 border-solid border-transparent hover:shadow-lg md:p-2 md:px-4 md:text-base"
 
                 >More
-                  <Image src={arrow} className={"w-9 ml-3"} />
+                  <Image src={arrow} alt='arrow' className={"w-9 ml-3"} />
                 </Link>
 
               </div>
