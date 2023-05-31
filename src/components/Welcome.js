@@ -46,14 +46,14 @@ const Welcome = ({ className = "" }) => {
   initial={{y:200}}
   whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
 viewport={{once:true}}
-className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg'>
+className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg xs:leading-[1.85rem]'>
 When it comes to logistics, Dunnage bags are inevitably a part of it.
   </motion.p>
   <motion.p
   initial={{y:200}}
   whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
 viewport={{once:true}}
-className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg'>
+className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem]  text-left sm:text-lg xs:leading-[1.85rem]'>
 Dunnage bags are poly bladders surrounded by ply’s of poly woven material with a
  valve that can inflate or deflate the bags. Dunnage bags are essentially padded
   bags to secure the goods in place and protect them while transporting by air, 
@@ -63,7 +63,7 @@ Dunnage bags are poly bladders surrounded by ply’s of poly woven material with
   initial={{y:200}}
   whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
 viewport={{once:true}}
-className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg'>
+className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg xs:leading-[1.85rem]'>
 In short Dunnage bags holds the cargo in place within the containers while transporting.
  It can be padded in any manner based on the goods it protects. Like right from bubble 
  wraps for smaller items to solid packaging for large items.
@@ -72,7 +72,7 @@ In short Dunnage bags holds the cargo in place within the containers while trans
   initial={{y:200}}
   whileInView={{y:0, transition:{duration:0.9, ease:"easeInOut"}}}
 viewport={{once:true}}
-className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg '>
+className='p-2 text-xl text-dark font-normal leading-[2.35rem] sm:leading-[2rem] text-left sm:text-lg xs:leading-[1.85rem] '>
 To protect the goods in the containers from shifting vertically, horizontally, or transversely, 
 buffering is essential to protect the goods and keep them intact till their destination 
 is reached. For this, the right dunnage bags are needed.

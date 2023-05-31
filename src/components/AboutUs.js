@@ -14,14 +14,14 @@ const AboutUs = ({ className = "" }) => {
     return (
         <main className={` -pt-16  flex items-center bg-primarylight text-primaryDark w-full min-h-screen 
     pb-0 mb-0 ${className} `} id='aboutus' >
-            <Layout className=' bg-transparent z-0 mx-32 xl:mx-12 lg:mx-6'>
+            <Layout className=' bg-transparent z-0 mx-32 xl:mx-12 lg:mx-6 sm:mx-0'>
                 <AnimatedText text="About Us" className='mb-16 !text-8xl lg:!text-7xl sm:!text-6xl xs:!text-5xl sm:mb-8 ' />
                 <div className="grid grid-cols-2 lg:flex lg:flex-col gap-16 2xl:gap-9 xl:gap-6 items-center">
                     <div className="flex flex-col items-center">
 
 
                         <Image src={aboutLogo} alt="UPC Logo" className="w-full h-auto px-24 " />
-                        <h2 className='Capitalize font-bold text-Dark text-5xl lg:text-4xl text-center 
+                        <h2 className='Capitalize font-bold text-Dark text-5xl lg:text-4xl sm:text-3xl text-center 
     leading-[60px] py-6  border-y-2 border-primaryDark '>UNITED PACKAGING CONSOLIDATORS</h2>
                         <div className="flex justify-between  pt-3 ">
                             <h6 className='font-bold text-xl lg:text-lg sm:text-base text-primaryDark  p-5 mx-2 sm:p-2 sm:mx-1' >Accessible</h6>
