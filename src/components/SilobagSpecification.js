@@ -97,7 +97,7 @@ const SilobagSpecification = ({ className = "" }) => {
                     </p>
                     <p
                         className='pt-3 pb-2 lg:py-1 font-medium text-dark text-xl lg:text-lg sm:text-base text-left'>
-                        Sizes: </p>
+                        Sizes:</p>
                     <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left'>a. Diameter of 7 to 12 feet</p>
                     <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left'>b. Length of 60m, 75 m, 120 m or higher  &#40;inhouse automatic folding machine&#41; </p>
                     <p
