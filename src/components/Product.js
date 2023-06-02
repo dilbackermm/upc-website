@@ -34,27 +34,27 @@ const Product = ({ className = "" }) => {
       <br className="md:block hidden"/> to explore </> } textStyles="text-center" /> */}
           <div onClick={() => {
             if (active == "prod-1") {
-              window.location.href = "/barrierliners"
+              window.location = '/barrierliners';
               console.log(active)
             }
             if (active == "prod-2") {
-              window.location.href = "/silobag"
+              window.location = '/silobag';
               console.log(active)
             }
             if (active == "prod-3") {
-              window.location.href = '/dunnagebag'
+              window.location = '/dunnagebag';
               console.log(active)
             }
             if (active == "prod-4") {
-              window.location.href = '/flexitank'
+              window.location = '/flexitank';
               console.log(active)
             }
             if (active == "prod-5") {
-              window.location.href = '/accessories'
+              window.location = '/accessories';
               console.log(active)
             }
           }
-          } className=" mt-12 sm:mt-6 flex lg:flex-col flex-row   min-h-[70vh] gap-5">
+          } className=" mt-12 sm:mt-6 flex lg:flex-col flex-row min-h-[70vh] gap-5">
             {exploreWorlds.map((world, index) => (
               <ExploreCard
                 key={world.id}
@@ -70,9 +70,6 @@ const Product = ({ className = "" }) => {
 
       </Layout>
     </main>
-
-
-
   )
 }
 

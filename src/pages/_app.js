@@ -15,22 +15,22 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   return (
-<>
-<Head>
+    <>
+      <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <main  
-    onCopy={(event) => {
-      event.preventDefault();
-    }}
-    className={`${montserrat.variable} font-mont w-full min-h-screen bg-transparent  `}>
-     
-  
-  <Component key={router.asPath} {...pageProps} />
-  
-      <Footer />
-    </main>
-</>
+      </Head>
+      <main
+        onCopy={(event) => {
+          event.preventDefault();
+        }}
+        className={`${montserrat.variable} font-mont w-full min-h-screen bg-transparent  `}>
+
+
+        <Component key={router.asPath} {...pageProps} />
+
+        <Footer />
+      </main>
+    </>
   )
 }
