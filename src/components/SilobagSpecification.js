@@ -97,16 +97,14 @@ const SilobagSpecification = ({ className = "" }) => {
                     </p>
                     <p
                         className='pt-3 pb-2 lg:py-1 font-medium text-dark text-xl lg:text-lg sm:text-base text-left'>
-                        Sizes:
-                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'>a. Diameter of 7 to 12 feet</p>
-                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'>b. Length of 60m, 75 m, 120 m or higher  &#40;inhouse automatic folding machine&#41; </p>
-                    </p>
+                        Sizes: </p>
+                    <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left'>a. Diameter of 7 to 12 feet</p>
+                    <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left'>b. Length of 60m, 75 m, 120 m or higher  &#40;inhouse automatic folding machine&#41; </p>
                     <p
                         className='pt-3 pb-2 lg:py-1 font-medium text-dark text-xl lg:text-lg sm:text-base text-left'>
-                        Capacity ranges from 180-250 tons or higher  &#40;for dry products&#41;
-                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal'> a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.</p>
-                        <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal' > b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
-                    </p>
+                        Capacity ranges from 180-250 tons or higher  &#40;for dry products&#41; </p>
+                    <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left'> a. Dry products: soft wheat, durum wheat, maize, sorghum, soybean, rice, barley, sunflower, oats, every grain product.</p>
+                    <p className='pt-2 lg:py-1 pl-6 lg:pl-3 font-normal text-xl lg:text-lg sm:text-base text-left' > b. Wet products: grains of any kind, silage, biomasses, mush, by products of industrial processes, forage.</p>
                 </div>
             </Layout>
         </main>
